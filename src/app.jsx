@@ -11,18 +11,18 @@ const app = () => {
 
   const curtainRef = useRef(null);
 
-  // useEffect(() => {
-  //   gsap.to(curtainRef.current, {
-  //     y: "-100%",
-  //     duration: 1.8,
-  //     ease: "power3.out",
-  //     delay: 0.5,
-  //   });
-  // }, []);
+  useEffect(() => {
+    gsap.to(curtainRef.current, {
+      y: "-100%",
+      duration: 1.8,
+      ease: "power3.out",
+      delay: 0.5,
+    });
+  }, []);
 
   return (
     <>
-      {/* <svg width="0" height="0">
+      <svg width="0" height="0">
         <defs>
           <clipPath id="curtainClip" clipPathUnits="objectBoundingBox">
             <path d="M0,0 L1,0 L1,0.85 Q0.5,1.04 0,0.85 Z" />
@@ -33,7 +33,7 @@ const app = () => {
         ref={curtainRef}
         className="fixed w-full h-[120vh] bg-black z-[9999]"
         style={{ clipPath: "url(#curtainClip)" }}
-      /> */}
+      />
       <Landing />
       <Work />
       <Project />

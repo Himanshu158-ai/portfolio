@@ -2,6 +2,9 @@
 import { ArrowDownRight, ArrowUpRight, Menu, X } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const landing = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +17,8 @@ const landing = () => {
     const imgRef = useRef(null);
     const dateRef = useRef(null);
     const arrowRef = useRef(null);
+    const mainRef = useRef(null);
+    const btmRef = useRef(null);
 
 
     useEffect(() => {
@@ -31,20 +36,71 @@ const landing = () => {
         setAvailableDate(`${month}'${year}`);
     }, []);
 
-    // useEffect(() => {
-    //     gsap.from([nameRef.current, navRef.current, descRef.current, btnRef.current, imgRef.current, dateRef.current, arrowRef.current], {
-    //         y: 40,
-    //         opacity: 0,
-    //         duration: 1.2,
-    //         ease: "power4.out",
-    //         delay: 1.8,
-    //         stagger: 0.16, 
-    //     });
-    // }, []);
+    useEffect(() => {
+        gsap.from(
+            [
+                nameRef.current,
+                navRef.current,
+                descRef.current,
+                btnRef.current,
+                imgRef.current,
+                dateRef.current,
+                arrowRef.current,
+            ],
+            {
+                y: 40,
+                opacity: 0,
+                duration: 1.2,
+                ease: "power4.out",
+                delay: 1.8,
+                stagger: 0.16,
+                onComplete: () => {
+
+                    gsap.to(navRef.current, {
+                        opacity: 0,
+                        y: -100,
+                        ease: "none",
+                        scrollTrigger: {
+                            trigger: document.body,
+                            start: "top top",
+                            end: "+=100",
+                            scrub: true,
+                            // markers: true,
+                        },
+                    });
+
+                    gsap.to(nameRef.current, {
+                        opacity: 0,
+                        y: 100,
+                        ease: "none",
+                        scrollTrigger: {
+                            trigger: document.body,
+                            start: "top top",
+                            end: "+=400",
+                            scrub: true,
+                        },
+                    });
+
+                    gsap.to(btmRef.current, {
+                        opacity: 0,
+                        y: 100,
+                        ease: "none",
+                        scrollTrigger: {
+                            trigger: document.body,
+                            start: "top top",
+                            end: "+=400",
+                            scrub: true,
+                        },
+                    });
+
+                },
+            }
+        );
+    }, []);
 
     return (
-        <div className='min-h-screen bg-[#E8E8E3] font-ppwatch'>
-            <nav ref={navRef} className='relative h-15 flex justify-between items-center px-5 md:px-10 pt-6 md:pt-4'>
+        <div ref={mainRef} className='min-h-screen bg-[#E8E8E3] font-ppwatch sticky top-0 z-[-1]'>
+            <nav ref={navRef} className='relative h-15 flex justify-between items-center px-5 md:px-10 pt-4 md:pt-2'>
                 <div className="text-[#6B645C] text-sm md:text-md font-medium tracking-wide w-[10rem] md:w-[20rem]">
                     Web Developer &amp; Designer
                 </div>
@@ -82,7 +138,8 @@ const landing = () => {
 
                 {/* Mobile Menu Button */}
                 <button
-                    className="md:hidden text-[#6B645C]"
+
+                    className="md:hidden text-[#6B645C] z-2"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -105,11 +162,11 @@ const landing = () => {
                 </h3>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0 pt-10 md:mt-12 md:h-[calc(100vh-15rem)]'>
+            <div ref={btmRef} className='grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0 pt-10 md:mt-12 md:h-[calc(100vh-15rem)]'>
 
                 <div className='flex flex-col justify-around items-center md:items-start px-5 md:px-10 gap-6 md:gap-0 text-center md:text-left'>
                     <ArrowDownRight
-                    ref={arrowRef}
+                        ref={arrowRef}
                         className="text-[#6B645C] text-md font-medium tracking-wide hidden md:block"
                         size={40}
                     />
@@ -118,7 +175,7 @@ const landing = () => {
                         Building modern web experiences where scalable engineering meets the power of Generative AI.
                     </p>
 
-                    <button ref={btnRef} className="group relative overflow-hidden rounded-full bg-[#393632] px-8 py-3">
+                    <button ref={btnRef} className="group relative overflow-hidden rounded-full bg-[#393632] px-8 py-3 z-2">
 
                         {/* Hover Background */}
                         <span className="absolute inset-0 bg-[#8C8C73] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)]"></span>
