@@ -2,7 +2,7 @@ import React from 'react'
 
 const WorksCards = ({ data, idx }) => {
   return (
-    <div className="bg-[#080807] flex flex-col gap-10 px-5 md:px-10 w-screen font-ppwatch text-[#D1D1C7] pb-20">
+    <div className="bg-[#080807] flex flex-col gap-10 px-5 md:px-10 w-screen font-ppwatch text-[#D1D1C7] pb-30">
       <hr className="border-0 border-t border-[#D1D1C7] h-px opacity-40" />
 
       <div className="flex flex-col lg:flex-row gap-10 lg:gap-80">

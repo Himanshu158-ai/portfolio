@@ -72,6 +72,7 @@ const landing = () => {
                     gsap.to(nameRef.current, {
                         opacity: 0,
                         y: 100,
+                        scale:0.9,
                         ease: "none",
                         scrollTrigger: {
                             trigger: document.body,
@@ -84,6 +85,7 @@ const landing = () => {
                     gsap.to(btmRef.current, {
                         opacity: 0,
                         y: 100,
+                        scale:0.9,
                         ease: "none",
                         scrollTrigger: {
                             trigger: document.body,
