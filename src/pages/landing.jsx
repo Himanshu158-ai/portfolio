@@ -32,25 +32,15 @@ const landing = () => {
     }, []);
 
     // useEffect(() => {
-    //     gsap.from(nameRef.current, {
+    //     gsap.from([nameRef.current, navRef.current, descRef.current, btnRef.current, imgRef.current, dateRef.current, arrowRef.current], {
     //         y: 40,
     //         opacity: 0,
     //         duration: 1.2,
-    //         ease: "power3.out",
-    //         delay: 2.1,
+    //         ease: "power4.out",
+    //         delay: 1.8,
+    //         stagger: 0.16, 
     //     });
     // }, []);
-
-    useEffect(() => {
-        gsap.from([nameRef.current, navRef.current, descRef.current, btnRef.current, imgRef.current, dateRef.current, arrowRef.current], {
-            y: 40,
-            opacity: 0,
-            duration: 1.2,
-            ease: "power3.out",
-            delay: 2.1,
-            stagger: 0.15, // har element thoda baad aayega
-        });
-    }, []);
 
     return (
         <div className='min-h-screen bg-[#E8E8E3] font-ppwatch'>
