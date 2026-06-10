@@ -1,4 +1,4 @@
-import img from "../assets/a.jpeg"
+
 import { ArrowDownRight, ArrowUpRight, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -117,7 +117,7 @@ const landing = () => {
                 <div className='flex justify-center items-center'>
                     <img
                         src="https://i.pinimg.com/1200x/e7/f2/f1/e7f2f17de35ce63c6621c957a3d8c7e8.jpg"
-                        className='h-[12rem] w-[8rem] md:h-[16rem] md:w-[11rem] object-cover rounded-lg'
+                        className='h-[12rem] w-[8rem] md:h-[18rem] md:w-[13rem] object-cover rounded-lg'
                         alt="image"
                     />
                 </div>
