@@ -1,5 +1,5 @@
 import img from "../assets/a.jpeg"
-import { ArrowDownRight, Menu, X } from "lucide-react";
+import { ArrowDownRight, ArrowUpRight, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const landing = () => {
@@ -39,17 +39,40 @@ const landing = () => {
         // </div>
 
         <div className='min-h-screen bg-[#E8E8E3] font-ppwatch'>
-            <nav className='relative h-15 flex justify-between items-center px-5 md:px-10 pt-6 md:pt-10'>
+            <nav className='relative h-15 flex justify-between items-center px-5 md:px-10 pt-2 md:pt-4'>
                 <div className="text-[#6B645C] text-sm md:text-md font-medium tracking-wide">
                     Web Developer &amp; Designer
                 </div>
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex space-x-4">
-                    <a className="text-[#6B645C] text-md font-medium tracking-wide hover:text-custom-black transition-colors duration-300" href="#">Services</a>
-                    <a className="text-[#6B645C] text-md font-medium tracking-wide hover:text-custom-black transition-colors duration-300" href="#">Works</a>
-                    <a className="text-[#6B645C] text-md font-medium tracking-wide hover:text-custom-black transition-colors duration-300" href="#">About</a>
-                    <a className="text-[#6B645C] text-md font-medium tracking-wide hover:text-custom-black transition-colors duration-300" href="#">Contact</a>
+                    <a href="#" className="group relative overflow-hidden h-6">
+                        <span className="flex flex-col text-[#6B645C] text-md font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
+                            <span>Services</span>
+                            <span>Services</span>
+                        </span>
+                    </a>
+
+                    <a href="#" className="group relative overflow-hidden h-6">
+                        <span className="flex flex-col text-[#6B645C] text-md font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
+                            <span>Works</span>
+                            <span>Works</span>
+                        </span>
+                    </a>
+
+                    <a href="#" className="group relative overflow-hidden h-6">
+                        <span className="flex flex-col text-[#6B645C] text-md font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
+                            <span>About</span>
+                            <span>About</span>
+                        </span>
+                    </a>
+
+                    <a href="#" className="group relative overflow-hidden h-6">
+                        <span className="flex flex-col text-[#6B645C] text-md font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
+                            <span>Contact</span>
+                            <span>Contact</span>
+                        </span>
+                    </a>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -71,34 +94,45 @@ const landing = () => {
                 )}
             </nav>
 
-            <div className='flex justify-center items-center px-4 mt-8 md:mt-0'>
-                <h3 className='text-[2.5rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#171717] tracking-tight text-center'>
+            <div className='flex justify-center items-center px-4 mt-[8rem] md:mt-0'>
+                <h3 className='text-[2.5rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#171717] tracking-tight text-center leading-[2.1rem] md:leading-[1]'>
                     HIMANSHU SINGH
                 </h3>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0 py-10 md:h-[calc(100vh-15rem)]'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0 pt-10 md:pt-20 md:h-[calc(100vh-15rem)]'>
 
                 <div className='flex flex-col justify-around items-center md:items-start px-5 md:px-10 gap-6 md:gap-0 text-center md:text-left'>
                     <ArrowDownRight
-                        className="text-[#6B645C] text-md font-medium tracking-wide"
+                        className="text-[#6B645C] text-md font-medium tracking-wide hidden md:block"
                         size={40}
                     />
 
-                    <p className='w-full md:w-3/4 text-lg font-medium text-[#6B645C] tracking-wide'>
-                        I build fast, modern websites that help businesses grow,
-                        available for freelance projects worldwide.
+                    <p className='w-full md:w-6/5 text-sm md:text-lg font-medium text-[#6B645C] tracking-wide'>
+                        Building modern web experiences where scalable engineering meets the power of Generative AI.
                     </p>
 
-                    <button className='bg-[#393632] text-white px-8 py-2 text-lg font-bold rounded-full transition-all duration-300 hover:bg-[#8C8C73] hover:text-white'>
-                        Contact
+                    <button className="group relative overflow-hidden rounded-full bg-[#393632] px-8 py-3">
+
+                        {/* Hover Background */}
+                        <span className="absolute inset-0 bg-[#8C8C73] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)]"></span>
+
+                        {/* Content */}
+                        <span className="relative z-10 flex items-center gap-2 text-white font-bold text-lg">
+                            Contact
+                            <ArrowUpRight
+                                size={22}
+                                className="transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1"
+                            />
+                        </span>
+
                     </button>
                 </div>
 
                 <div className='flex justify-center items-center'>
                     <img
-                        src={img}
-                        className='h-[16rem] w-[12rem] md:h-[19rem] md:w-[14rem] object-cover rounded-lg'
+                        src="https://i.pinimg.com/1200x/e7/f2/f1/e7f2f17de35ce63c6621c957a3d8c7e8.jpg"
+                        className='h-[12rem] w-[8rem] md:h-[19rem] md:w-[13rem] object-cover rounded-lg'
                         alt="image"
                     />
                 </div>
@@ -106,7 +140,7 @@ const landing = () => {
                 <div className='flex justify-center md:justify-end items-center md:items-end'>
                     <div className='flex flex-col items-center md:items-end px-5 md:px-10'>
                         <p className='text-[#6B645C] text-md font-medium tracking-wide'>
-                            Available For
+                            Available For Hire
                         </p>
 
                         <h2 className='text-[#393632] text-4xl md:text-6xl font-bold tracking-tight'>
