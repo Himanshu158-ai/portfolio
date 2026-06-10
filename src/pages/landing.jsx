@@ -1,11 +1,20 @@
 
 import { ArrowDownRight, ArrowUpRight, Menu, X } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import gsap from "gsap";
 
 const landing = () => {
     const [isOpen, setIsOpen] = useState(false);
-
     const [availableDate, setAvailableDate] = useState("");
+
+    const nameRef = useRef(null);
+    const navRef = useRef(null);
+    const descRef = useRef(null);
+    const btnRef = useRef(null);
+    const imgRef = useRef(null);
+    const dateRef = useRef(null);
+    const arrowRef = useRef(null);
+
 
     useEffect(() => {
         const date = new Date();
@@ -22,9 +31,30 @@ const landing = () => {
         setAvailableDate(`${month}'${year}`);
     }, []);
 
+    // useEffect(() => {
+    //     gsap.from(nameRef.current, {
+    //         y: 40,
+    //         opacity: 0,
+    //         duration: 1.2,
+    //         ease: "power3.out",
+    //         delay: 2.1,
+    //     });
+    // }, []);
+
+    useEffect(() => {
+        gsap.from([nameRef.current, navRef.current, descRef.current, btnRef.current, imgRef.current, dateRef.current, arrowRef.current], {
+            y: 40,
+            opacity: 0,
+            duration: 1.2,
+            ease: "power3.out",
+            delay: 2.1,
+            stagger: 0.15, // har element thoda baad aayega
+        });
+    }, []);
+
     return (
         <div className='min-h-screen bg-[#E8E8E3] font-ppwatch'>
-            <nav className='relative h-15 flex justify-between items-center px-5 md:px-10 pt-6 md:pt-4'>
+            <nav ref={navRef} className='relative h-15 flex justify-between items-center px-5 md:px-10 pt-6 md:pt-4'>
                 <div className="text-[#6B645C] text-sm md:text-md font-medium tracking-wide w-[10rem] md:w-[20rem]">
                     Web Developer &amp; Designer
                 </div>
@@ -80,7 +110,7 @@ const landing = () => {
             </nav>
 
             <div className='flex flex-col justify-center items-center px-4 mt-[12rem] md:mt-0'>
-                <h3 className='text-[2.5rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#171717] tracking-tight text-center leading-[2.1rem] md:leading-[1]'>
+                <h3 ref={nameRef} className='text-[2.5rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#171717] tracking-tight text-center leading-[2.1rem] md:leading-[1]'>
                     HIMANSHU SINGH
                 </h3>
             </div>
@@ -89,15 +119,16 @@ const landing = () => {
 
                 <div className='flex flex-col justify-around items-center md:items-start px-5 md:px-10 gap-6 md:gap-0 text-center md:text-left'>
                     <ArrowDownRight
+                    ref={arrowRef}
                         className="text-[#6B645C] text-md font-medium tracking-wide hidden md:block"
                         size={40}
                     />
 
-                    <p className='w-full md:w-6/5 text-sm md:text-lg font-medium text-[#6B645C] tracking-wide'>
+                    <p ref={descRef} className='w-full md:w-6/5 text-sm md:text-lg font-medium text-[#6B645C] tracking-wide'>
                         Building modern web experiences where scalable engineering meets the power of Generative AI.
                     </p>
 
-                    <button className="group relative overflow-hidden rounded-full bg-[#393632] px-8 py-3">
+                    <button ref={btnRef} className="group relative overflow-hidden rounded-full bg-[#393632] px-8 py-3">
 
                         {/* Hover Background */}
                         <span className="absolute inset-0 bg-[#8C8C73] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)]"></span>
@@ -115,7 +146,7 @@ const landing = () => {
                 </div>
 
                 <div className='flex justify-center items-center'>
-                    <img
+                    <img ref={imgRef}
                         src="https://i.pinimg.com/1200x/e7/f2/f1/e7f2f17de35ce63c6621c957a3d8c7e8.jpg"
                         className='h-[12rem] w-[8rem] md:h-[18rem] md:w-[13rem] object-cover rounded-lg'
                         alt="image"
@@ -123,7 +154,7 @@ const landing = () => {
                 </div>
 
                 <div className='flex justify-center md:justify-end items-center md:items-end'>
-                    <div className='flex flex-col items-center md:items-end px-5 md:px-10'>
+                    <div ref={dateRef} className='flex flex-col items-center md:items-end px-5 md:px-10'>
                         <p className='text-[#6B645C] text-md font-medium tracking-wide'>
                             Available For Hire
                         </p>

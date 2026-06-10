@@ -23,7 +23,7 @@ const app = () => {
       <svg width="0" height="0">
         <defs>
           <clipPath id="curtainClip" clipPathUnits="objectBoundingBox">
-            <path d="M0,0 L1,0 L1,0.85 Q0.5,1.05 0,0.85 Z" />
+            <path d="M0,0 L1,0 L1,0.85 Q0.5,1.04 0,0.85 Z" />
           </clipPath>
         </defs>
       </svg>

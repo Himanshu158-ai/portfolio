@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+* {
+  scrollbar-width: none; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
 @font-face {
   font-family: "PPWatch";
   src: url("./assets/fonts/PPWatch-Black.otf") format("opentype");
