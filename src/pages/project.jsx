@@ -3,9 +3,25 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+import ProjectCards from "../components/ProjectCards";
 
 
 gsap.registerPlugin(ScrollTrigger);
+
+const projects = [
+  {
+    title: "NURA",
+    subtitle: "Modern Marketing Website",
+  },
+  {
+    title: "VELA",
+    subtitle: "Luxury Fashion Platform",
+  },
+  {
+    title: "ORBIT",
+    subtitle: "AI Product Showcase",
+  },
+];
 
 const Project = () => {
   const sectionRef = useRef(null)
@@ -108,7 +124,7 @@ const Project = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2">
         {/* LEFT */}
-        <div className="hidden md:flex h-screen sticky top-0 flex items-center justify-center bg-red-500">
+        <div className="hidden md:flex h-screen sticky top-0 flex items-center justify-center">
           <AnimatePresence mode="wait">
             <motion.h1
               key={active}
@@ -125,17 +141,18 @@ const Project = () => {
 
         {/* RIGHT */}
         <div className="">
-          {[1, 2, 3].map((item, index) => (
+          {projects.map((project, index) => (
             <div
-              key={item}
-              data-id={item}
+              key={project.title}
+              data-id={index + 1}
               ref={(el) => (sections.current[index] = el)}
-              className="h-screen border border-gray-400 flex items-center justify-center text-6xl"
+              className="h-screen flex items-center justify-center text-6xl"
             >
-              {item}
+              <ProjectCards data={project}/>
             </div>
           ))}
         </div>
+
       </div>
     </div>
   );
