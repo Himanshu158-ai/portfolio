@@ -1,130 +1,7 @@
-// import React, { useRef, useEffect } from 'react'
-// import gsap from 'gsap'
-// import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
-// gsap.registerPlugin(ScrollTrigger)
-
-// const Skill = () => {
-//     const sectionRef = useRef(null)
-
-//     useEffect(() => {
-//         gsap.fromTo(
-//             sectionRef.current,
-//             { width: "100%" },
-//             {
-//                 width: "97%",
-//                 ease: "none",
-//                 scrollTrigger: {
-//                     trigger: sectionRef.current,
-//                     start: "top top",
-//                     end: "+=500",
-//                     scrub: true,
-//                 },
-//             }
-//         )
-//     }, [])
-
-//     return (
-//         <div className="min-h-[200vh] bg-[#E8E8E3] flex justify-center">
-//             <div
-//                 ref={sectionRef}
-//                 className="bg-[#080807] text-white rounded-b-[2rem] pt-30"
-//             >
-//                 <section className="h-screen w-full bg-[#080807] text-[#D1D1C7] flex px-10 py-12 font-ppwatch">
-//                     {/* Left Side */}
-//                     <div className="w-[50%] flex items-center">
-//                         <div className="leading-[0.9] font-bold uppercase">
-//                             <h1 className="text-[4rem] tracking-tighter">Developer</h1>
-//                             <h1 className="text-[4rem] tracking-tighter">Designer</h1>
-//                             <h1 className="text-[4rem] tracking-tighter">Creator/</h1>
-//                         </div>
-//                     </div>
-
-//                     {/* Right Side */}
-//                     <div className="w-[50%] flex flex-col justify-between items-center gap-10">
-//                         <div className="flex justify-center">
-//                             <h2 className="text-[4rem] font-medium">Skills</h2>
-//                         </div>
-
-//                         <div className="grid grid-cols-3 gap-2">
-//                             {/* Column 1 */}
-//                             <div>
-//                                 <h3 className="font-medium mb-4">
-//                                     Languages
-//                                     <br />
-//                                     & Tools
-//                                 </h3>
-
-//                                 <ul className="space-y-2 text-[#9f9f9f]">
-//                                     <li>Python</li>
-//                                     <li>SQL</li>
-//                                     <li>C++</li>
-//                                     <li>Java</li>
-//                                     <li>TypeScript</li>
-//                                     <li>JavaScript</li>
-//                                     <li>Git</li>
-//                                     <li>Postman</li>
-//                                     <li>Docker</li>
-//                                     <li>Firebase</li>
-//                                 </ul>
-//                             </div>
-
-//                             {/* Column 2 */}
-//                             <div>
-//                                 <h3 className="font-medium mb-4">
-//                                     Frameworks
-//                                     <br />
-//                                     & Libraries
-//                                 </h3>
-
-//                                 <ul className="space-y-2 text-[#9f9f9f]">
-//                                     <li>React</li>
-//                                     <li>Node.js</li>
-//                                     <li>Express.js</li>
-//                                     <li>Flask</li>
-//                                     <li>Bootstrap</li>
-//                                     <li>jQuery</li>
-//                                     <li>TailwindCSS</li>
-//                                     <li>Framer Motion</li>
-//                                     <li>GSAP</li>
-//                                 </ul>
-//                             </div>
-
-//                             {/* Column 3 */}
-//                             <div>
-//                                 <h3 className="font-medium mb-4">
-//                                     Core CS
-//                                     <br />
-//                                     Concepts
-//                                 </h3>
-
-//                                 <ul className="space-y-2 text-[#9f9f9f]">
-//                                     <li>DSA</li>
-//                                     <li>DBMS</li>
-//                                     <li>OOP</li>
-//                                     <li>Operating Systems</li>
-//                                     <li>System Design</li>
-//                                 </ul>
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </section>
-//                 <section className='h-screen w-full bg-green-400'>
-
-//                 </section>
-//             </div>
-//         </div>
-//     )
-// }
-
-// export default Skill
-
-
-
-
 import React, { useRef, useEffect } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import SplitType from 'split-type'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -173,6 +50,28 @@ const skillColumns = [
 const Skill = () => {
     const sectionRef = useRef(null)
     const itemRefs = useRef([]) // each entry: { li, span1, span2 }
+    const titleRef = useRef(null)
+
+    useEffect(() => {
+        const split = new SplitType(titleRef.current, {
+            types: 'chars',
+        })
+
+        gsap.from(split.chars, {
+            y: 100,
+            opacity: 0,
+            stagger: 0.03,
+            duration: 0.8,
+            ease: 'power4.out',
+            scrollTrigger: {
+                trigger: titleRef.current,
+                start: 'top 80%',
+                toggleActions: 'play none none reverse',
+            },
+        })
+
+        return () => split.revert()
+    }, [])
 
     useEffect(() => {
         gsap.fromTo(
@@ -215,15 +114,17 @@ const Skill = () => {
     let refIndex = 0
 
     return (
-        <div className=" bg-[#E8E8E3] flex justify-center ">
-            <div ref={sectionRef} className="w-screen">
+        <div className="  flex justify-center ">
+            <div ref={sectionRef} className="w-screen bg-[#E8E8E3]">
                 <section className="w-full bg-[#080807] text-[#D1D1C7] flex flex-col-reverse md:flex-row px-6 md:px-10 py-12 font-ppwatch gap-30">
                     {/* Left Side */}
                     <div className="w-full md:w-[60%] flex items-center justify-center md:justify-start">
-                        <div className="leading-[1] font-bold uppercase text-center md:text-left">
-                            <h1 className="text-[2.5rem] md:text-[4rem] tracking-wide">Developer</h1>
-                            <h1 className="text-[2.5rem] md:text-[4rem] tracking-wide">Designer</h1>
-                            <h1 className="text-[2.5rem] md:text-[4rem] tracking-wide">Creator/</h1>
+                        <div
+                            ref={titleRef}
+                            className="leading-[1] font-bold uppercase text-center md:text-left">
+                            <h1 className="text-[2.3rem] md:text-[4rem] tracking-wide px-2">Developer</h1>
+                            <h1 className="text-[2.3rem] md:text-[4rem] tracking-wide">Designer</h1>
+                            <h1 className="text-[2.3rem] md:text-[4rem] tracking-wide">Creator/</h1>
                         </div>
                     </div>
 
@@ -278,7 +179,7 @@ const Skill = () => {
                     </div>
                 </section>
 
-                <section className="pt-20 w-full bg-[#080807] text-[#D1D1C7] px-4 md:px-8 py-12 font-ppwatch rounded-b-[2rem]">
+                <section className="pt-20 w-full bg-[#080807] text-[#D1D1C7] px-4 md:px-8 py-12 font-ppwatch rounded-b-[2rem] z-20 relative">
                     <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-10 h-full">
 
                         {/* Left Image */}

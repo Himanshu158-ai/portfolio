@@ -3,6 +3,7 @@ import { ArrowDownRight, ArrowUpRight, Menu, X } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import SplitType from "split-type";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -37,9 +38,21 @@ const landing = () => {
     }, []);
 
     useEffect(() => {
+        const splitName = new SplitType(nameRef.current, {
+            types: "chars",
+        });
+
+        gsap.from(splitName.chars, {
+            yPercent: 100,
+            opacity: 0,
+            stagger: 0.05,
+            duration: 1,
+            ease: "power4.out",
+            delay: 1.3,
+        });
+
         gsap.from(
             [
-                nameRef.current,
                 navRef.current,
                 descRef.current,
                 btnRef.current,
@@ -52,7 +65,7 @@ const landing = () => {
                 opacity: 0,
                 duration: 1.4,
                 ease: "power4.out",
-                delay: 1.3,
+                delay: 1.8,
                 stagger: 0.14,
                 onComplete: () => {
 
@@ -72,7 +85,7 @@ const landing = () => {
                     gsap.to(nameRef.current, {
                         opacity: 0,
                         y: 100,
-                        scale:0.9,
+                        scale: 0.9,
                         ease: "none",
                         scrollTrigger: {
                             trigger: document.body,
@@ -85,7 +98,7 @@ const landing = () => {
                     gsap.to(btmRef.current, {
                         opacity: 0,
                         y: 100,
-                        scale:0.9,
+                        scale: 0.9,
                         ease: "none",
                         scrollTrigger: {
                             trigger: document.body,
@@ -98,6 +111,10 @@ const landing = () => {
                 },
             }
         );
+
+        return () => {
+            splitName.revert();
+        };
     }, []);
 
     return (
@@ -159,7 +176,7 @@ const landing = () => {
             </nav>
 
             <div className='flex flex-col justify-center items-center px-4 mt-[9.5rem] md:mt-0'>
-                <h3 ref={nameRef} className='text-[2.5rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#171717] tracking-tight text-center leading-[2.1rem] md:leading-[1]'>
+                <h3 ref={nameRef} className='text-[2.8rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#171717] tracking-tight text-center leading-[2.1rem] md:leading-[1]'>
                     HIMANSHU SINGH
                 </h3>
             </div>
