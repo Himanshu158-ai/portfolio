@@ -1,6 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -8,6 +11,8 @@ const Project = () => {
   const sectionRef = useRef(null)
   const headingRef = useRef(null)
   const contentRef = useRef(null)
+  const [active, setActive] = useState(1);
+  const sections = useRef([]);
 
   useEffect(() => {
     const letters = headingRef.current.querySelectorAll(".letter")
@@ -45,7 +50,27 @@ const Project = () => {
     }
   }, [])
 
-  const heading = "SELECTED WORKS /";
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive(Number(entry.target.dataset.id));
+          }
+        });
+      },
+      {
+        threshold: 0.6,
+      }
+    );
+
+    sections.current.forEach((section) => {
+      if (section) observer.observe(section);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
 
   return (
     <div
@@ -78,6 +103,38 @@ const Project = () => {
           <p className='text-sm font-light tracking-wide'>
             From authentication systems to full-scale web applications, these projects reflect my passion for building practical, production-ready solutions.
           </p>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        {/* LEFT */}
+        <div className="hidden md:flex h-screen sticky top-0 flex items-center justify-center bg-red-500">
+          <AnimatePresence mode="wait">
+            <motion.h1
+              key={active}
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -100, opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-9xl font-bold"
+            >
+              0{active}
+            </motion.h1>
+          </AnimatePresence>
+        </div>
+
+        {/* RIGHT */}
+        <div className="">
+          {[1, 2, 3].map((item, index) => (
+            <div
+              key={item}
+              data-id={item}
+              ref={(el) => (sections.current[index] = el)}
+              className="h-screen border border-gray-400 flex items-center justify-center text-6xl"
+            >
+              {item}
+            </div>
+          ))}
         </div>
       </div>
     </div>
