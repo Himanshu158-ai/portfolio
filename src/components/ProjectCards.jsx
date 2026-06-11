@@ -55,7 +55,7 @@ const ProjectCards = ({ data }) => {
       >
         <img
           className="w-full h-[80vh] object-cover rounded-lg cursor-pointer "
-          src="https://i.pinimg.com/736x/b2/7a/45/b27a45abfc28992c9c004793231c2c89.jpg"
+          src={data.D}
           alt=""
         />
       </a>

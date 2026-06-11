@@ -12,14 +12,17 @@ const projects = [
   {
     title: "NURA",
     subtitle: "Modern Marketing Website",
+    D:"https://i.pinimg.com/736x/b2/7a/45/b27a45abfc28992c9c004793231c2c89.jpg"
   },
   {
     title: "VELA",
     subtitle: "Luxury Fashion Platform",
+    D:"https://i.pinimg.com/1200x/f3/fe/4e/f3fe4e50c9299ae4e16328a935d80078.jpg"
   },
   {
     title: "ORBIT",
     subtitle: "AI Product Showcase",
+    D:"https://i.pinimg.com/1200x/ec/9c/13/ec9c13b5b06e1d8bb82c2ebde5408694.jpg"
   },
 ];
 
