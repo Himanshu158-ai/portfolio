@@ -2,6 +2,8 @@
 import Landing from './pages/landing'
 import Work from './pages/work';
 import Project from './pages/project';
+import Skill from './pages/skill';
+import Contact from './pages/contact';
 import { useRef } from 'react';
 import { useEffect } from 'react';
 import gsap from 'gsap';
@@ -63,6 +65,8 @@ const app = () => {
       <Landing />
       <Work />
       <Project />
+      <Skill/>
+      <Contact/>
     </>
 
   )

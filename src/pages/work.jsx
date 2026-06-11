@@ -71,7 +71,7 @@ useEffect(() => {
   return (
     <div
       ref={sectionRef}
-      className="w-screen bg-[#080807] text-[#D1D1C7] rounded-t-[1.6rem] font-ppwatch"
+      className="w-screen bg-[#080807] text-[#D1D1C7] rounded-t-[2rem] font-ppwatch"
     >
       <div className="px-5 md:px-[4rem] py-10 md:py-20 flex flex-col gap-16 md:gap-20">
 
