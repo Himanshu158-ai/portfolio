@@ -7,11 +7,11 @@ const footer = () => {
 
         {/* Menu */}
         <div>
-          <h1 className='text-lg font-medium mb-4'>Menu</h1>
+          <h1 className='text-lg font-medium mb-4 text-[#393632]'>Menu</h1>
 
           <hr className='border-black/20 mb-6' />
 
-          <div className='flex flex-col gap-3'>
+          <div className='flex flex-col gap-3 text-[#6B645C]'>
             <a
               href="#"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
@@ -77,11 +77,11 @@ const footer = () => {
 
         {/* Socials */}
         <div>
-          <h1 className='text-lg font-medium mb-4'>Socials</h1>
+          <h1 className='text-lg font-medium mb-4 text-[#393632]'>Socials</h1>
 
           <hr className='border-black/20 mb-6' />
 
-          <div className='flex flex-col gap-3'>
+          <div className='flex flex-col gap-3 text-[#6B645C]'>
             <a
               href="#"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
