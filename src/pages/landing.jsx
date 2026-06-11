@@ -48,12 +48,12 @@ const landing = () => {
                 arrowRef.current,
             ],
             {
-                y: 40,
+                y: 60,
                 opacity: 0,
-                duration: 1.2,
+                duration: 1.4,
                 ease: "power4.out",
-                delay: 1.8,
-                stagger: 0.16,
+                delay: 1.3,
+                stagger: 0.14,
                 onComplete: () => {
 
                     gsap.to(navRef.current, {
@@ -158,7 +158,7 @@ const landing = () => {
                 )}
             </nav>
 
-            <div className='flex flex-col justify-center items-center px-4 mt-[12rem] md:mt-0'>
+            <div className='flex flex-col justify-center items-center px-4 mt-[9.5rem] md:mt-0'>
                 <h3 ref={nameRef} className='text-[2.5rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#171717] tracking-tight text-center leading-[2.1rem] md:leading-[1]'>
                     HIMANSHU SINGH
                 </h3>
