@@ -24,11 +24,11 @@ const landing = () => {
     const mainRef = useRef(null);
     const btmRef = useRef(null);
 
-    const scrollToSection = (id,duration=1.4) => {
+    const scrollToSection = (id,duration=1) => {
         gsap.to(window, {
             duration,
             scrollTo: `#${id}`,
-            ease:"power4.inOut",
+            ease:"none",
         });
     };
 
@@ -152,7 +152,7 @@ const landing = () => {
                     <a href="#works" className="group relative overflow-hidden h-6 cursor-pointer"
                      onClick={(e)=>{
                         e.preventDefault();
-                        scrollToSection("works",3);
+                        scrollToSection("works",3.4);
                     }}
                     >
                         <span className="flex flex-col text-[#6B645C] text-md font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
@@ -164,7 +164,7 @@ const landing = () => {
                     <a href="#about" className="group relative overflow-hidden h-6 cursor-pointer"
                     onClick={(e)=>{
                         e.preventDefault();
-                        scrollToSection("about",4);
+                        scrollToSection("about",4.7);
                     }}
                     >
                         <span className="flex flex-col text-[#6B645C] text-md font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
@@ -176,7 +176,7 @@ const landing = () => {
                     <a href="#contact" className="group relative overflow-hidden h-6 cursor-pointer"
                     onClick={(e)=>{
                         e.preventDefault();
-                        scrollToSection("contact",4.6);
+                        scrollToSection("contact",6);
                     }}
                     >
                         <span className="flex flex-col text-[#6B645C] text-md font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">

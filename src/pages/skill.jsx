@@ -99,13 +99,14 @@ const Skill = () => {
             sectionRef.current,
             { width: '100%' },
             {
-                width: '95%',
+                width: '98%',
                 ease: 'none',
                 scrollTrigger: {
                     trigger: sectionRef.current,
-                    start: 'top top',
+                    start: '50% top',
                     end: '+=500',
                     scrub: true,
+                    // markers:true
                 },
             }
         )
@@ -136,10 +137,12 @@ const Skill = () => {
 
     return (
         <div className="flex justify-center " id='about'>
-            <div ref={sectionRef} className="w-screen ">
-                <section className="w-full bg-[#080807] text-[#D1D1C7] flex flex-col-reverse md:flex-row px-6 md:px-10 py-40 font-ppwatch gap-30">
+            <div
+                ref={sectionRef}
+                className="w-screen ">
+                <section className="w-full bg-[#080807] text-[#D1D1C7] flex flex-col-reverse md:flex-row md:px-10 py-40 font-ppwatch gap-30 md:gap-8">
                     {/* Left Side */}
-                    <div className="w-full md:w-[60%] flex items-center justify-center md:justify-start">
+                    <div className="w-full md:w-[50%] flex items-center justify-center md:justify-start">
                         <div
                             ref={titleRef}
                             className="leading-[1.1] font-bold uppercase text-center md:text-left">
@@ -150,7 +153,7 @@ const Skill = () => {
                     </div>
 
                     {/* Right Side */}
-                    <div className="w-full md:w-[40%] flex flex-col justify-center items-center gap-6 md:gap-8 mt-8 md:mt-0">
+                    <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-6 md:gap-8 mt-8 md:mt-0 px-4">
                         <div className="flex justify-center">
                             <h2 className="text-[2.5rem] md:text-[4rem] font-medium">Skills</h2>
                         </div>
@@ -158,7 +161,7 @@ const Skill = () => {
                         <div className="grid grid-cols-3 gap-x-4 gap-y-2 w-full">
                             {skillColumns.map((col, ci) => (
                                 <div key={ci}>
-                                    <h3 className="font-medium mb-3 whitespace-pre-line text-sm md:text-md md:font-semibold">
+                                    <h3 className="font-medium mb-3 whitespace-pre-line text-sm md:text-[1rem] md:font-semibold">
                                         {col.heading}
                                     </h3>
                                     <ul className="space-y-2 md:space-y-3 text-[#9f9f9f]">
@@ -180,13 +183,13 @@ const Skill = () => {
                                                 >
                                                     <span
                                                         data-s="1"
-                                                        className="block transition-transform duration-300 ease-in-out group-hover:-translate-y-full text-xs"
+                                                        className="block transition-transform duration-300 ease-in-out group-hover:-translate-y-full text-xs md:text-[0.9rem]"
                                                     >
                                                         {skill}
                                                     </span>
                                                     <span
                                                         data-s="2"
-                                                        className="block absolute inset-0 translate-y-full transition-transform duration-300 ease-in-out group-hover:translate-y-0 text-sm"
+                                                        className="block absolute inset-0 translate-y-full transition-transform duration-300 ease-in-out group-hover:translate-y-0 text-xs md:text-[0.9rem]"
                                                     >
                                                         {skill}
                                                     </span>
@@ -200,8 +203,10 @@ const Skill = () => {
                     </div>
                 </section>
 
-                <section className="pt-20 w-full bg-[#080807] text-[#D1D1C7] px-4 md:px-8 py-12 font-ppwatch rounded-b-[2rem] z-20 relative">
-                    <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-10 h-full px-10">
+                <section
+                    // ref={sectionRef}
+                    className="pt-20 w-full bg-[#080807] text-[#D1D1C7] md:px-8 py-12 font-ppwatch rounded-b-[2rem] z-20 relative">
+                    <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-10 md:gap-0 h-full px-10">
 
                         {/* Left Image */}
                         <div className="flex justify-center lg:justify-start">
@@ -210,7 +215,7 @@ const Skill = () => {
                                 src='https://i.pinimg.com/736x/0a/5a/d0/0a5ad04ded73ddfa88bead239be71ce5.jpg'
                                 // src='https://i.pinimg.com/736x/f4/71/55/f47155707c3d433ebdf05a8dc7fcdc23.jpg'
                                 alt="about"
-                                className="w-full  max-w-[350px] h-[350px] md:h-[500px] object-cover rounded-tr-[3rem] rounded-bl-[3rem] md:rounded-bl-[4rem] md:rounded-tr-[4rem]"
+                                className="w-full max-w-[350px] h-[350px] md:h-[500px] object-cover rounded-tr-[3rem] rounded-bl-[3rem] md:rounded-bl-[4rem] md:rounded-tr-[4rem]"
                             />
                         </div>
 
@@ -218,26 +223,26 @@ const Skill = () => {
                         <div className="flex flex-col">
 
                             {/* Heading */}
-                            <h2 className="text-[1.1rem] md:text-[1.5rem] leading-[1.2] font-medium md:w-[600px] text-left md:text-left md:mt-10">
+                            <h2 className="text-[1rem] md:text-[1.5rem] leading-[1.2] font-medium md:w-[600px] text-left md:mt-10">
                                 -I'm a developer who enjoys transforming complex ideas into simple,
                                 scalable, and production-ready digital products.
                             </h2>
 
                             {/* Bottom Section */}
-                            <div className="mt-16 md:mt-24 grid md:grid-cols-[180px_1fr] gap-8 md:gap-8">
+                            <div className="mt-16 md:mt-24 grid md:grid-cols-[180px_1fr] gap-8 md:gap-2">
 
                                 <div>
-                                    <span className="text-lg font-light tracking-wide">
+                                    <span className="text-[1rem] font-light tracking-wide">
                                         (About Me)
                                     </span>
                                 </div>
 
-                                <div className="space-y-5 text-base md:text-[0.9rem] leading-[1.25] text-[#D1D1C7] min-w-0 max-w-[450px] md:pr-18 pr-10">
-                                    <p className='text-sm font-light tracking-wide'>
+                                <div className="space-y-5 text-base md:text-[0.9rem] leading-[1.25] text-[#D1D1C7] min-w-0 max-w-[450px]">
+                                    <p className='text-[1rem] font-light tracking-wide'>
                                         I build modern web applications and AI-powered experiences with a focus on performance, scalability, and clean design. Passionate about turning complex ideas into simple, useful, and production-ready products.
                                     </p>
 
-                                    <p className='text-sm font-light tracking-wide'>
+                                    <p className='text-[1rem] font-light tracking-wide'>
                                         Whether it’s a full-stack platform, an intelligent AI tool, or an interactive user experience, I enjoy creating software that delivers real value and feels effortless to use.
                                     </p>
                                 </div>

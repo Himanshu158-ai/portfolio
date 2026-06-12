@@ -136,16 +136,17 @@ const Project = () => {
       <div className="grid grid-cols-1 md:grid-cols-2">
         {/* LEFT */}
         <div className="hidden md:flex h-screen sticky top-0 flex items-center justify-center">
+          <span className="text-8xl font-semibold">&Theta;</span>
           <AnimatePresence mode="wait">
             <motion.h1
               key={active}
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -100, opacity: 0 }}
-              transition={{ duration: 0.5 }}
-              className="text-9xl font-bold"
+              transition={{ duration: 0.3 }}
+              className="text-9xl font-bold font-mono"
             >
-              0{active}
+              {active}
             </motion.h1>
           </AnimatePresence>
         </div>
