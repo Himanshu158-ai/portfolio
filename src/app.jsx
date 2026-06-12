@@ -64,6 +64,7 @@ const app = () => {
         className="fixed w-full h-[130vh] bg-black z-[9999]"
         style={{ clipPath: "url(#curtainClip)" }}
       />
+      
       <Landing />
       <Work />
       <Project />

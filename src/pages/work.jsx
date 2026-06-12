@@ -71,7 +71,7 @@ useEffect(() => {
   return (
     <div
       ref={sectionRef}
-      className="w-screen bg-[#080807] text-[#D1D1C7] rounded-t-[2rem] font-ppwatch"
+      className="w-screen bg-[#080807] text-[#D1D1C7] rounded-t-[2rem] font-ppwatch relative z-10"
     >
       <div className="px-5 md:px-[4rem] py-10 md:py-20 flex flex-col gap-16 md:gap-20">
 
@@ -104,13 +104,14 @@ useEffect(() => {
           </p>
         </div>
       </div>
+
        <div className="relative h-[400vh]">
         {cardsData.map((card, i) => (
           <div
             key={i}
-            className="sticky h-screen"
+            className="sticky h-[90vh]"
             style={{
-              top: `${(i + 1) * 90}px`,
+              top: `${(i + 1) * 100}px`,
               zIndex: 10 + i,
             }}
           >

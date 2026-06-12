@@ -118,7 +118,7 @@ const landing = () => {
     }, []);
 
     return (
-        <div ref={mainRef} className='min-h-screen bg-[#E8E8E3] font-ppwatch sticky top-0 z-[-1]'>
+        <div ref={mainRef} className='min-h-screen bg-[#E8E8E3] font-ppwatch sticky top-0 z-0'>
             <nav ref={navRef} className='relative h-15 flex justify-between items-center px-5 md:px-10 pt-4 md:pt-2'>
                 <div className="text-[#6B645C] text-sm md:text-md font-medium tracking-wide w-[10rem] md:w-[20rem]">
                     Web Developer &amp; Designer
@@ -158,7 +158,7 @@ const landing = () => {
                 {/* Mobile Menu Button */}
                 <button
 
-                    className="md:hidden text-[#6B645C] z-2"
+                    className="md:hidden text-[#6B645C]"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -175,13 +175,13 @@ const landing = () => {
                 )}
             </nav>
 
-            <div className='flex flex-col justify-center items-center px-4 mt-[9.5rem] md:mt-0'>
-                <h3 ref={nameRef} className='text-[2.8rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#171717] tracking-tight text-center leading-[2.1rem] md:leading-[1]'>
+            <div className='flex flex-col justify-center items-center px-4 mt-[7.5rem] md:mt-0'>
+                <h3 ref={nameRef} className='text-[2.8rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#393632] tracking-tight text-center leading-[2.1rem] md:leading-[1]'>
                     HIMANSHU SINGH
                 </h3>
             </div>
 
-            <div ref={btmRef} className='grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0 pt-10 md:mt-12 md:h-[calc(100vh-15rem)]'>
+            <div ref={btmRef} className='grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0 pt-10 md:mt-12 md:h-[calc(100vh-15rem)]'>
 
                 <div className='flex flex-col justify-around items-center md:items-start px-5 md:px-10 gap-6 md:gap-0 text-center md:text-left'>
                     <ArrowDownRight
@@ -194,7 +194,7 @@ const landing = () => {
                         Building modern web experiences where scalable engineering meets the power of Generative AI.
                     </p>
 
-                    <button ref={btnRef} className="group relative overflow-hidden rounded-full bg-[#393632] px-8 py-3 z-2">
+                    <button ref={btnRef} className="group relative overflow-hidden rounded-full bg-[#393632] px-8 py-3">
 
                         {/* Hover Background */}
                         <span className="absolute inset-0 bg-[#8C8C73] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)]"></span>
@@ -214,7 +214,7 @@ const landing = () => {
                 <div className='flex justify-center items-center'>
                     <img ref={imgRef}
                         src="https://i.pinimg.com/1200x/e7/f2/f1/e7f2f17de35ce63c6621c957a3d8c7e8.jpg"
-                        className='h-[12rem] w-[8rem] md:h-[18rem] md:w-[13rem] object-cover rounded-lg'
+                        className='h-[8rem] w-[6rem] md:h-[18rem] md:w-[13rem] object-cover rounded-md'
                         alt="image"
                     />
                 </div>

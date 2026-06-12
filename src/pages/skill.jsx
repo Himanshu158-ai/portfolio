@@ -115,16 +115,16 @@ const Skill = () => {
 
     return (
         <div className="  flex justify-center ">
-            <div ref={sectionRef} className="w-screen bg-[#E8E8E3]">
+            <div ref={sectionRef} className="w-screen ">
                 <section className="w-full bg-[#080807] text-[#D1D1C7] flex flex-col-reverse md:flex-row px-6 md:px-10 py-12 font-ppwatch gap-30">
                     {/* Left Side */}
                     <div className="w-full md:w-[60%] flex items-center justify-center md:justify-start">
                         <div
                             ref={titleRef}
-                            className="leading-[1] font-bold uppercase text-center md:text-left">
-                            <h1 className="text-[2.3rem] md:text-[4rem] tracking-wide px-2">Developer</h1>
-                            <h1 className="text-[2.3rem] md:text-[4rem] tracking-wide">Designer</h1>
-                            <h1 className="text-[2.3rem] md:text-[4rem] tracking-wide">Creator/</h1>
+                            className="leading-[1.1] font-bold uppercase text-center md:text-left">
+                            <h1 className="text-[2.3rem] md:text-[4rem] tracking-wide px-2">Code.</h1>
+                            <h1 className="text-[2.3rem] md:text-[4rem] tracking-wide">Motion.</h1>
+                            <h1 className="text-[2.3rem] md:text-[4rem] tracking-wide">Impact/</h1>
                         </div>
                     </div>
 

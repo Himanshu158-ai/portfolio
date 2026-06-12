@@ -15,8 +15,6 @@ body,
   background-color: #E8E8E3;
   margin: 0;
   padding: 0;
-  z-index: -20;
-  position: relative;
 }
 
 .char {

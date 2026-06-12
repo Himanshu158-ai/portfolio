@@ -2,7 +2,7 @@ import React from 'react'
 
 const footer = () => {
   return (
-    <div className='h-[80vh] w-full font-ppwatch px-6 md:px-12 pt-60'>
+    <div className='h-[80vh] w-full font-ppwatch px-6 md:px-12 pt-60 relative z-10'>
       <div className='grid grid-cols-2 gap-12 md:gap-24'>
 
         {/* Menu */}
