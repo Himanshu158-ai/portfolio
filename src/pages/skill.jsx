@@ -146,24 +146,25 @@ const Skill = () => {
                         <div
                             ref={titleRef}
                             className="leading-[1.1] font-bold uppercase text-center md:text-left">
-                            <h1 className="text-[2.3rem] md:text-[4rem] lg:text-[5rem] tracking-wide px-2">Code.</h1>
-                            <h1 className="text-[2.3rem] md:text-[4rem] lg:text-[5rem] tracking-wide">Motion.</h1>
-                            <h1 className="text-[2.3rem] md:text-[4rem] lg:text-[5rem] tracking-wide">Impact/</h1>
+                            <h1 className="text-[2.8rem] md:text-[4rem] lg:text-[5rem] tracking-wide px-2">Code.</h1>
+                            <h1 className="text-[2.8rem] md:text-[4rem] lg:text-[5rem] tracking-wide">Motion.</h1>
+                            <h1 className="text-[2.8rem] md:text-[4rem] lg:text-[5rem] tracking-wide">Impact/</h1>
                         </div>
                     </div>
 
                     {/* Right Side */}
-                    <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-6 md:gap-8 mt-8 md:mt-0 px-4">
+                    <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-8 mt-6 md:mt-0">
                         <div className="flex justify-center">
-                            <h2 className="text-[2.5rem] md:text-[4rem] font-medium">Skills</h2>
+                            <h2 className="text-[2.8rem] md:text-[4rem] tracking-wide">Skills</h2>
                         </div>
 
-                        <div className="grid grid-cols-3 gap-x-4 gap-y-2 w-full">
+                        <div className="grid grid-cols-3 gap-x-8 gap-y-2 w-full px-6">
                             {skillColumns.map((col, ci) => (
                                 <div key={ci}>
-                                    <h3 className="font-medium mb-3 whitespace-pre-line text-sm md:text-[1rem] md:font-semibold">
+                                    <h3 className="font-medium mb-3 whitespace-pre-line text-[0.75rem] md:text-[1rem] md:font-semibold">
                                         {col.heading}
                                     </h3>
+                                    <hr className='pt-4 opacity-30'/>
                                     <ul className="space-y-2 md:space-y-3 text-[#9f9f9f]">
                                         {col.items.map((skill) => {
                                             const idx = refIndex++
@@ -211,11 +212,11 @@ const Skill = () => {
                         {/* Left Image */}
                         <div className="flex justify-center lg:justify-start">
                             <img
-                                // src="https://i.pinimg.com/736x/fe/ce/d9/feced940ac84097e5f76881d376d2748.jpg"
-                                src='https://i.pinimg.com/736x/0a/5a/d0/0a5ad04ded73ddfa88bead239be71ce5.jpg'
+                                src="https://i.pinimg.com/736x/fe/ce/d9/feced940ac84097e5f76881d376d2748.jpg"
+                                // src='https://i.pinimg.com/736x/0a/5a/d0/0a5ad04ded73ddfa88bead239be71ce5.jpg'
                                 // src='https://i.pinimg.com/736x/f4/71/55/f47155707c3d433ebdf05a8dc7fcdc23.jpg'
                                 alt="about"
-                                className="w-full max-w-[350px] h-[350px] md:h-[500px] object-cover rounded-tr-[3rem] rounded-bl-[3rem] md:rounded-bl-[4rem] md:rounded-tr-[4rem]"
+                                className="w-full max-w-[350px] h-[500px] object-cover rounded-sm"
                             />
                         </div>
 
@@ -232,7 +233,7 @@ const Skill = () => {
                             <div className="mt-16 md:mt-24 grid md:grid-cols-[180px_1fr] gap-8 md:gap-2">
 
                                 <div>
-                                    <span className="text-[1rem] font-light tracking-wide">
+                                    <span className="text-[1.1rem] font-light tracking-wide">
                                         (About Me)
                                     </span>
                                 </div>

@@ -131,7 +131,7 @@ const landing = () => {
     return (
         <div ref={mainRef} className='min-h-screen bg-[#E8E8E3] font-ppwatch sticky top-0 z-0'>
             <nav ref={navRef} className='relative h-15 flex justify-between items-center px-5 md:px-10 pt-4 md:pt-2'>
-                <div className="text-[#6B645C] text-sm md:text-md font-medium tracking-wide w-[10rem] md:w-[20rem]">
+                <div className="text-[#6B645C] text-sm md:text-[1rem] font-medium tracking-wide w-[10rem] md:w-[20rem]">
                     Web Developer &amp; Designer
                 </div>
 
@@ -223,7 +223,7 @@ const landing = () => {
             </nav>
 
             <div className='flex flex-col justify-center items-center px-4 mt-[7.5rem] md:mt-5'>
-                <h3 ref={nameRef} className='text-[2.8rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#393632] tracking-tight text-center leading-[2.1rem] md:leading-[1]'>
+                <h3 ref={nameRef} className='text-[2.8rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#393632] tracking-tight text-center leading-[2.1rem] md:leading-[1] scale-y-160'>
                     HIMANSHU SINGH
                 </h3>
             </div>
@@ -237,7 +237,7 @@ const landing = () => {
                         size={40}
                     />
 
-                    <p ref={descRef} className='w-full md:w-6/5 text-sm md:text-lg font-medium text-[#6B645C] tracking-wide'>
+                    <p ref={descRef} className='w-full md:w-6/5 text-sm md:text-[1.2rem] font-medium text-[#6B645C] tracking-wide'>
                         Building modern web experiences where scalable engineering meets the power of Generative AI.
                     </p>
 

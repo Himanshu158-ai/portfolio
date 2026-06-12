@@ -91,14 +91,14 @@ const work = () => {
 
         <div
           ref={contentRef}
-          className='flex justify-between items-start flex-col md:flex-row gap-4 md:gap-15 w-[90%] md:w-[55%] md:ml-[45%]'
+          className='flex justify-between items-start flex-col md:flex-row gap-5 md:gap-15 w-full md:w-[55%] md:ml-[45%]'
           
         >
-          <h1 className='text-lg font-light tracking-wide'>
+          <h1 className='text-[1.1rem] font-light tracking-wide'>
             (Capabilities)
           </h1>
 
-          <p className='text-sm font-light tracking-wide'>
+          <p className='text-[1rem] font-light tracking-wide'>
             MERN Stack Developer crafting scalable web applications, intelligent
             AI-powered solutions, and interactive user experiences. Focused on
             building clean, performant, and production-ready products that solve

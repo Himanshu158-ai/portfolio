@@ -123,11 +123,11 @@ const Project = () => {
           ref={contentRef}
           className='flex justify-between items-start flex-col md:flex-row gap-4 md:gap-15 w-[90%] md:w-[55%] md:ml-[45%]'
         >
-          <h1 className='text-lg font-light tracking-wide'>
+          <h1 className='text-[1.1rem] font-light tracking-wide'>
             (PROJECTS)
           </h1>
 
-          <p className='text-sm font-light tracking-wide'>
+          <p className='text-[1rem] font-light tracking-wide'>
             From AI-powered tools to full-stack web applications, these projects showcase my ability to build scalable, user-focused, and production-ready digital products.
           </p>
         </div>
