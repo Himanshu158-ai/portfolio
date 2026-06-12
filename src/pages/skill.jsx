@@ -143,9 +143,9 @@ const Skill = () => {
                         <div
                             ref={titleRef}
                             className="leading-[1.1] font-bold uppercase text-center md:text-left">
-                            <h1 className="text-[2.3rem] md:text-[4rem] tracking-wide px-2">Code.</h1>
-                            <h1 className="text-[2.3rem] md:text-[4rem] tracking-wide">Motion.</h1>
-                            <h1 className="text-[2.3rem] md:text-[4rem] tracking-wide">Impact/</h1>
+                            <h1 className="text-[2.3rem] md:text-[4rem] lg:text-[5rem] tracking-wide px-2">Code.</h1>
+                            <h1 className="text-[2.3rem] md:text-[4rem] lg:text-[5rem] tracking-wide">Motion.</h1>
+                            <h1 className="text-[2.3rem] md:text-[4rem] lg:text-[5rem] tracking-wide">Impact/</h1>
                         </div>
                     </div>
 
