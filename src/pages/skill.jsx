@@ -206,9 +206,9 @@ const Skill = () => {
                         {/* Left Image */}
                         <div className="flex justify-center lg:justify-start">
                             <img
-                                src="https://i.pinimg.com/1200x/ec/9c/13/ec9c13b5b06e1d8bb82c2ebde5408694.jpg"
+                                src="https://i.pinimg.com/736x/fe/ce/d9/feced940ac84097e5f76881d376d2748.jpg"
                                 alt="about"
-                                className="w-full max-w-[350px] h-[500px] object-cover rounded-md"
+                                className="w-full max-w-[350px] h-[500px] object-cover rounded-[2rem]"
                             />
                         </div>
 
