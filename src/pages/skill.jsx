@@ -135,7 +135,7 @@ const Skill = () => {
     let refIndex = 0
 
     return (
-        <div className="flex justify-center ">
+        <div className="flex justify-center " id='about'>
             <div ref={sectionRef} className="w-screen ">
                 <section className="w-full bg-[#080807] text-[#D1D1C7] flex flex-col-reverse md:flex-row px-6 md:px-10 py-40 font-ppwatch gap-30">
                     {/* Left Side */}

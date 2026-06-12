@@ -72,6 +72,7 @@ const work = () => {
     <div
       ref={sectionRef}
       className="w-screen bg-[#080807] text-[#D1D1C7] rounded-t-[2rem] font-ppwatch relative z-10"
+      id='capabilities'
     >
       <div className="px-5 md:px-[4rem] py-10 md:py-20 flex flex-col gap-16 md:gap-20">
 
@@ -91,6 +92,7 @@ const work = () => {
         <div
           ref={contentRef}
           className='flex justify-between items-start flex-col md:flex-row gap-4 md:gap-15 w-[90%] md:w-[55%] md:ml-[45%]'
+          
         >
           <h1 className='text-lg font-light tracking-wide'>
             (Capabilities)

@@ -17,6 +17,10 @@ body,
   padding: 0;
 }
 
+/* html {
+  scroll-behavior: smooth;
+} */
+
 .char {
   display: inline-block;
 }

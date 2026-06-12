@@ -83,7 +83,7 @@ const footer = () => {
 
           <div className='flex flex-col gap-3 text-[#6B645C]'>
             <a
-              href="#"
+              href="https://github.com/Himanshu158-ai"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
             >
               <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
@@ -95,7 +95,7 @@ const footer = () => {
               </span>
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/himanshusingh123/"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
             >
               <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
@@ -107,7 +107,7 @@ const footer = () => {
               </span>
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/himaaanshu.9/"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
             >
               <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
