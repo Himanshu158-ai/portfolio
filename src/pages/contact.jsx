@@ -29,7 +29,7 @@ const Contact = () => {
     <div className='relative z-9'>
       <div
         ref={cardRef}
-className='bg-[linear-gradient(to_bottom,#080807_0%,#080807_35%,#1A1815_65%,#2B2823_100%)] md:mx-20 mx-4 min-h-screen flex flex-col items-center justify-center relative -top-30 md:-top-25 rounded-[5px]'
+        className='bg-[linear-gradient(to_bottom,#151513_0%,#121210_35%,#1A1815_65%,#2B2823_100%)] md:mx-20 mx-4 min-h-screen flex flex-col items-center justify-center relative -top-30 md:-top-25 rounded-[5px]'
       >
         <div className='md:max-w-[60%] max-w-[90%] text-center py-5  uppercase flex items-center justify-center'>
           <h1 className='text-2xl md:text-6xl font-bold font-ppwatch text-[#E8E8E3]'>let's make it together</h1>

@@ -214,7 +214,7 @@ const landing = () => {
                 <div className='flex justify-center items-center'>
                     <img ref={imgRef}
                         src="https://i.pinimg.com/1200x/e7/f2/f1/e7f2f17de35ce63c6621c957a3d8c7e8.jpg"
-                        className='h-[8rem] w-[6rem] md:h-[18rem] md:w-[13rem] object-cover rounded-md'
+                        className='h-[9rem] w-[6rem] md:h-[18rem] md:w-[13rem] object-cover rounded-md'
                         alt="image"
                     />
                 </div>
