@@ -180,7 +180,7 @@ const Skill = () => {
                                                 >
                                                     <span
                                                         data-s="1"
-                                                        className="block transition-transform duration-300 ease-in-out group-hover:-translate-y-full text-sm"
+                                                        className="block transition-transform duration-300 ease-in-out group-hover:-translate-y-full text-xs"
                                                     >
                                                         {skill}
                                                     </span>
@@ -201,14 +201,16 @@ const Skill = () => {
                 </section>
 
                 <section className="pt-20 w-full bg-[#080807] text-[#D1D1C7] px-4 md:px-8 py-12 font-ppwatch rounded-b-[2rem] z-20 relative">
-                    <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-10 h-full">
+                    <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-10 h-full px-10">
 
                         {/* Left Image */}
                         <div className="flex justify-center lg:justify-start">
                             <img
-                                src="https://i.pinimg.com/736x/fe/ce/d9/feced940ac84097e5f76881d376d2748.jpg"
+                                // src="https://i.pinimg.com/736x/fe/ce/d9/feced940ac84097e5f76881d376d2748.jpg"
+                                src='https://i.pinimg.com/736x/0a/5a/d0/0a5ad04ded73ddfa88bead239be71ce5.jpg'
+                                // src='https://i.pinimg.com/736x/f4/71/55/f47155707c3d433ebdf05a8dc7fcdc23.jpg'
                                 alt="about"
-                                className="w-full max-w-[350px] h-[500px] object-cover rounded-[2rem]"
+                                className="w-full  max-w-[350px] h-[350px] md:h-[500px] object-cover rounded-tr-[3rem] rounded-bl-[3rem] md:rounded-bl-[4rem] md:rounded-tr-[4rem]"
                             />
                         </div>
 
@@ -216,8 +218,8 @@ const Skill = () => {
                         <div className="flex flex-col">
 
                             {/* Heading */}
-                            <h2 className="text-[1.2rem] md:text-[1.5rem] leading-[1.2] font-medium md:w-[600px] text-left md:text-left md:mt-10">
-                                I'm a developer who enjoys transforming complex ideas into simple,
+                            <h2 className="text-[1.1rem] md:text-[1.5rem] leading-[1.2] font-medium md:w-[600px] text-left md:text-left md:mt-10">
+                                -I'm a developer who enjoys transforming complex ideas into simple,
                                 scalable, and production-ready digital products.
                             </h2>
 
