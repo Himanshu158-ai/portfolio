@@ -35,15 +35,36 @@ function scrambleText(spans, finalText, duration = 1.2) {
 const skillColumns = [
     {
         heading: 'Languages\n& Tools',
-        items: ['Python', 'SQL', 'C++', 'Java', 'TypeScript', 'JavaScript', 'Git', 'Postman', 'Docker', 'Firebase'],
+        items: [
+            "JavaScript",
+            "TypeScript",
+            "Python",
+            "C++",
+            "Git",
+            "GitHub",
+            "Docker",
+            "Postman",
+            "MongoDB",
+            "Vercel",
+            "Render"
+        ],
     },
     {
         heading: 'Frameworks\n& Libraries',
-        items: ['React', 'Node.js', 'Express.js', 'Flask', 'Bootstrap', 'jQuery', 'TailwindCSS', 'Framer Motion', 'GSAP'],
+        items: [
+            'React',
+            'Node.js',
+            'Express.js',
+            'Tailwind CSS',
+            'GSAP', ,
+            'GenAI',
+            'LangGraph',
+            'LangChain'
+        ]
     },
     {
         heading: 'Core CS\nConcepts',
-        items: ['DSA', 'DBMS', 'OOP', 'Operating Systems', 'System Design'],
+        items: ['DSA', 'DBMS', 'OOP', 'OS', 'CN'],
     },
 ]
 
@@ -114,9 +135,9 @@ const Skill = () => {
     let refIndex = 0
 
     return (
-        <div className="  flex justify-center ">
+        <div className="flex justify-center ">
             <div ref={sectionRef} className="w-screen ">
-                <section className="w-full bg-[#080807] text-[#D1D1C7] flex flex-col-reverse md:flex-row px-6 md:px-10 py-12 font-ppwatch gap-30">
+                <section className="w-full bg-[#080807] text-[#D1D1C7] flex flex-col-reverse md:flex-row px-6 md:px-10 py-40 font-ppwatch gap-30">
                     {/* Left Side */}
                     <div className="w-full md:w-[60%] flex items-center justify-center md:justify-start">
                         <div
@@ -140,7 +161,7 @@ const Skill = () => {
                                     <h3 className="font-medium mb-3 whitespace-pre-line text-sm md:text-md md:font-semibold">
                                         {col.heading}
                                     </h3>
-                                    <ul className="space-y-1 md:space-y-2 text-[#9f9f9f]">
+                                    <ul className="space-y-2 md:space-y-3 text-[#9f9f9f]">
                                         {col.items.map((skill) => {
                                             const idx = refIndex++
                                             return (
@@ -195,9 +216,9 @@ const Skill = () => {
                         <div className="flex flex-col">
 
                             {/* Heading */}
-                            <h2 className="text-[1.2rem] md:text-[1.5rem] leading-[1.2] font-medium md:w-[580px] text-left md:text-left md:mt-10">
-                                I'm a software engineer driven by a passion for turning ideas into
-                                clean, intuitive digital experiences.
+                            <h2 className="text-[1.2rem] md:text-[1.5rem] leading-[1.2] font-medium md:w-[600px] text-left md:text-left md:mt-10">
+                                I'm a developer who enjoys transforming complex ideas into simple,
+                                scalable, and production-ready digital products.
                             </h2>
 
                             {/* Bottom Section */}
@@ -211,17 +232,11 @@ const Skill = () => {
 
                                 <div className="space-y-5 text-base md:text-[0.9rem] leading-[1.25] text-[#D1D1C7] min-w-0 max-w-[450px] md:pr-18 pr-10">
                                     <p className='text-sm font-light tracking-wide'>
-                                        I’m a full-stack developer who builds fast, modern web
-                                        applications using React, Next.js, Node.js, and Tailwind CSS.
-                                        I enjoy turning ideas into products that are reliable,
-                                        scalable, and genuinely enjoyable to use.
+                                        I build modern web applications and AI-powered experiences with a focus on performance, scalability, and clean design. Passionate about turning complex ideas into simple, useful, and production-ready products.
                                     </p>
 
                                     <p className='text-sm font-light tracking-wide'>
-                                        My focus is creating smooth user experiences, writing clean
-                                        code, and building projects that solve real problems. Whether
-                                        it’s a portfolio, SaaS product, or business website, I care
-                                        about the details that make software feel polished.
+                                        Whether it’s a full-stack platform, an intelligent AI tool, or an interactive user experience, I enjoy creating software that delivers real value and feels effortless to use.
                                     </p>
                                 </div>
 

@@ -30,7 +30,7 @@ const WorksCards = ({ data, idx }) => {
                       {String(skillIdx + 1).padStart(2, "0")}
                     </span>
 
-                    <h2 className="text-lg md:text-xl font-semibold tracking-wide">
+                    <h2 className="text-lg md:text-xl font-medium tracking-wide">
                       {skill}
                     </h2>
                   </div>

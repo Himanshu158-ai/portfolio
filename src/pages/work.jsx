@@ -16,57 +16,57 @@ const cardsData = [
     num: "(02)",
     title: "UI/UX Design",
     desc: "Crafting modern, clean interfaces with smooth animations and intuitive user experiences that leave a lasting impression.",
-    skills: ["TailwindCSS, Figma", "GSAP, CSS", "Responsive Design"]
+    skills: ["TailwindCSS, HTML, JavaScript", "GSAP, CSS", "Responsive Design"]
   },
   {
     num: "(03)",
     title: "AI Integration",
     desc: "Building intelligent applications powered by LLMs and multi-agent pipelines that solve real-world problems with speed and accuracy.",
-    skills: ["LangChain, LangGraph", "OpenAI, Gemini APIs", "Vector DBs, Multi-Agent"]
+    skills: ["LangChain, LangGraph", "OpenAI, Gemini APIs", "RAG, Multi-Agent"]
   }
 ]
 
 const work = () => {
 
-const sectionRef = useRef(null)
-const headingRef = useRef(null)
-const contentRef = useRef(null)
+  const sectionRef = useRef(null)
+  const headingRef = useRef(null)
+  const contentRef = useRef(null)
 
-useEffect(() => {
-  const letters = headingRef.current.querySelectorAll(".letter")
+  useEffect(() => {
+    const letters = headingRef.current.querySelectorAll(".letter")
 
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: sectionRef.current,
-      start: "top 75%",
-      toggleActions: "play none none none",
-      once: true,
-    },
-  })
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: "top 75%",
+        toggleActions: "play none none none",
+        once: true,
+      },
+    })
 
-  tl.from(letters, {
-    y: 120,
-    opacity: 0,
-    stagger: 0.025,
-    duration: 1.1,
-    ease: "power4.out",
-  })
-
-  tl.from(
-    contentRef.current,
-    {
-      y: 50,
+    tl.from(letters, {
+      y: 120,
       opacity: 0,
-      duration: 1,
+      stagger: 0.025,
+      duration: 1.1,
       ease: "power4.out",
-    },
-    "-=0.6"
-  )
+    })
 
-  return () => {
-    tl.kill()
-  }
-}, [])
+    tl.from(
+      contentRef.current,
+      {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        ease: "power4.out",
+      },
+      "-=0.6"
+    )
+
+    return () => {
+      tl.kill()
+    }
+  }, [])
 
   return (
     <div
@@ -93,19 +93,19 @@ useEffect(() => {
           className='flex justify-between items-start flex-col md:flex-row gap-4 md:gap-15 w-[90%] md:w-[55%] md:ml-[45%]'
         >
           <h1 className='text-lg font-light tracking-wide'>
-            (SERVICES)
+            (Capabilities)
           </h1>
 
           <p className='text-sm font-light tracking-wide'>
-            MERN Stack Developer focused on building scalable web applications,
-            AI-powered solutions, and interactive user experiences. I enjoy
-            turning complex ideas into clean, efficient, and production-ready
-            products.
+            MERN Stack Developer crafting scalable web applications, intelligent
+            AI-powered solutions, and interactive user experiences. Focused on
+            building clean, performant, and production-ready products that solve
+            real-world problems.
           </p>
         </div>
       </div>
 
-       <div className="relative h-[400vh]">
+      <div className="relative h-[400vh]">
         {cardsData.map((card, i) => (
           <div
             key={i}

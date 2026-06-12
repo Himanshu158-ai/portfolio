@@ -7,7 +7,7 @@ const footer = () => {
 
         {/* Menu */}
         <div>
-          <h1 className='text-lg font-medium mb-4 text-[#393632]'>Menu</h1>
+          <h1 className='text-lg md:text-xl font-medium mb-4 text-[#393632] tracking-wider'>Menu</h1>
 
           <hr className='border-black/20 mb-6' />
 
@@ -16,11 +16,11 @@ const footer = () => {
               href="#"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
             >
-              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 Home
               </span>
 
-              <span className="absolute inset-0 translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0">
+              <span className="absolute inset-0 translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 Home
               </span>
             </a>
@@ -28,11 +28,11 @@ const footer = () => {
               href="#"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
             >
-              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 About
               </span>
 
-              <span className="absolute inset-0 translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0">
+              <span className="absolute inset-0 translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 About
               </span>
             </a>
@@ -40,11 +40,11 @@ const footer = () => {
               href="#"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
             >
-              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 Projects
               </span>
 
-              <span className="absolute inset-0 translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0">
+              <span className="absolute inset-0 translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 Projects
               </span>
             </a>
@@ -52,11 +52,11 @@ const footer = () => {
               href="#"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
             >
-              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 Contact
               </span>
 
-              <span className="absolute inset-0 translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0">
+              <span className="absolute inset-0 translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 Contact
               </span>
             </a>
@@ -64,11 +64,11 @@ const footer = () => {
               href="#"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
             >
-              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 Resume
               </span>
 
-              <span className="absolute inset-0 translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0">
+              <span className="absolute inset-0 translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 Resume
               </span>
             </a>
@@ -77,7 +77,7 @@ const footer = () => {
 
         {/* Socials */}
         <div>
-          <h1 className='text-lg font-medium mb-4 text-[#393632]'>Socials</h1>
+          <h1 className='text-lg md:text-xl font-medium mb-4 text-[#393632] tracking-wider'>Socials</h1>
 
           <hr className='border-black/20 mb-6' />
 
@@ -86,11 +86,11 @@ const footer = () => {
               href="#"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
             >
-              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 Github
               </span>
 
-              <span className="absolute inset-0 translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0">
+              <span className="absolute inset-0 translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 Github
               </span>
             </a>
@@ -98,11 +98,11 @@ const footer = () => {
               href="#"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
             >
-              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 Linkedin
               </span>
 
-              <span className="absolute inset-0 translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0">
+              <span className="absolute inset-0 translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 Linkedin
               </span>
             </a>
@@ -110,11 +110,11 @@ const footer = () => {
               href="#"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
             >
-              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 Instagram
               </span>
 
-              <span className="absolute inset-0 translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0">
+              <span className="absolute inset-0 translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 Instagram
               </span>
             </a>

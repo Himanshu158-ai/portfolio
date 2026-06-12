@@ -128,8 +128,8 @@ const landing = () => {
                 <div className="hidden md:flex space-x-4">
                     <a href="#" className="group relative overflow-hidden h-6">
                         <span className="flex flex-col text-[#6B645C] text-md font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
-                            <span>Services</span>
-                            <span>Services</span>
+                            <span>Capabilities</span>
+                            <span>Capabilities</span>
                         </span>
                     </a>
 

@@ -42,7 +42,7 @@ const ProjectCards = ({ data }) => {
   }
 
   return (
-    <div className='w-full h-full p-4 rounded-lg bg-[#080807] text-[#D1D1C7] flex flex-col gap-2'>
+    <div className='w-full px-4 rounded-lg bg-[#080807] text-[#D1D1C7] flex flex-col gap-4 md:gap-1'>
       <a
         href="https://zunedaalim.com/"
         target="_blank"
@@ -51,10 +51,9 @@ const ProjectCards = ({ data }) => {
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
         onMouseMove={handleMouseMove}
-
       >
         <img
-          className="w-full h-[80vh] object-cover rounded-lg cursor-pointer "
+          className="w-full h-[70vh] md:h-[80vh] object-cover rounded-lg cursor-pointer "
           src={data.D}
           alt=""
         />
@@ -63,7 +62,7 @@ const ProjectCards = ({ data }) => {
 
       <p className='text-sm font-light tracking-wider text-[#D1D1C7]/70'>{data.subtitle}</p>
       <div className='flex justify-between w-full items-center'>
-        <h2 className='text-3xl font-bold tracking-tighter text-[#D1D1C7]'>{data.title}</h2>
+        <h2 className='text-xl md:text-2xl font-semibold tracking-tight text-[#D1D1C7]'>{data.title}</h2>
         <div className="flex gap-2">
           <button className='border border-[#D1D1C7]/40 px-4 py-2 rounded-full text-[0.7rem] text-[#D1D1C7] '>DEVELOPMENT</button>
           <button className='border px-4 py-2 rounded-full text-[0.7rem] bg-[#D1D1C7] text-black'>2025</button>

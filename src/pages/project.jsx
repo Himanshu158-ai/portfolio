@@ -10,19 +10,22 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
-    title: "NURA",
-    subtitle: "Modern Marketing Website",
-    D:"https://i.pinimg.com/736x/b2/7a/45/b27a45abfc28992c9c004793231c2c89.jpg"
+    title: "Aura",
+    subtitle: "Your Multi-Agent Resume Builder",
+    D: "https://i.pinimg.com/736x/b2/7a/45/b27a45abfc28992c9c004793231c2c89.jpg",
+    link: "#"
   },
   {
-    title: "VELA",
-    subtitle: "Luxury Fashion Platform",
-    D:"https://i.pinimg.com/1200x/f3/fe/4e/f3fe4e50c9299ae4e16328a935d80078.jpg"
+    title: "NexHire",
+    subtitle: "Where Talent Meets Opportunity",
+    D: "https://i.pinimg.com/1200x/f3/fe/4e/f3fe4e50c9299ae4e16328a935d80078.jpg",
+    link: "#"
   },
   {
-    title: "ORBIT",
-    subtitle: "AI Product Showcase",
-    D:"https://i.pinimg.com/1200x/ec/9c/13/ec9c13b5b06e1d8bb82c2ebde5408694.jpg"
+    title: "CineVerse",
+    subtitle: "Explore Stories Beyond Screens",
+    D: "https://i.pinimg.com/1200x/ec/9c/13/ec9c13b5b06e1d8bb82c2ebde5408694.jpg",
+    link: "#"
   },
 ];
 
@@ -120,7 +123,7 @@ const Project = () => {
           </h1>
 
           <p className='text-sm font-light tracking-wide'>
-            From authentication systems to full-scale web applications, these projects reflect my passion for building practical, production-ready solutions.
+            From AI-powered tools to full-stack web applications, these projects showcase my ability to build scalable, user-focused, and production-ready digital products.
           </p>
         </div>
       </div>
@@ -143,13 +146,13 @@ const Project = () => {
         </div>
 
         {/* RIGHT */}
-        <div className="">
+        <div className=" flex flex-col gap-20">
           {projects.map((project, index) => (
             <div
               key={project.title}
               data-id={index + 1}
               ref={(el) => (sections.current[index] = el)}
-              className="h-screen flex items-center justify-center text-6xl"
+              className=" flex items-center justify-center text-6xl"
             >
               <ProjectCards data={project}/>
             </div>
