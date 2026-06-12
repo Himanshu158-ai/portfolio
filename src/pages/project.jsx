@@ -13,19 +13,23 @@ const projects = [
     title: "Aura",
     subtitle: "Your Multi-Agent Resume Builder",
     D: "https://i.pinimg.com/736x/b2/7a/45/b27a45abfc28992c9c004793231c2c89.jpg",
-    link: "#"
+    link: "https://resume-builder-llm.vercel.app/",
+    year:"2026"
+
   },
   {
     title: "NexHire",
     subtitle: "Where Talent Meets Opportunity",
     D: "https://i.pinimg.com/1200x/f3/fe/4e/f3fe4e50c9299ae4e16328a935d80078.jpg",
-    link: "#"
+    link: "https://next-hire-gamma.vercel.app/",
+    year:"2026"
   },
   {
     title: "CineVerse",
     subtitle: "Explore Stories Beyond Screens",
     D: "https://i.pinimg.com/1200x/ec/9c/13/ec9c13b5b06e1d8bb82c2ebde5408694.jpg",
-    link: "#"
+    link: "https://cineverse-dun.vercel.app/",
+    year:"2025"
   },
 ];
 

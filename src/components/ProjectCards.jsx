@@ -44,7 +44,7 @@ const ProjectCards = ({ data }) => {
   return (
     <div className='w-full px-4 rounded-lg bg-[#080807] text-[#D1D1C7] flex flex-col gap-4 md:gap-1'>
       <a
-        href="https://zunedaalim.com/"
+        href={data.link}
         target="_blank"
         rel="noopener noreferrer"
         className="block"
@@ -65,7 +65,7 @@ const ProjectCards = ({ data }) => {
         <h2 className='text-xl md:text-2xl font-semibold tracking-tight text-[#D1D1C7]'>{data.title}</h2>
         <div className="flex gap-2">
           <button className='border border-[#D1D1C7]/40 px-4 py-2 rounded-full text-[0.7rem] text-[#D1D1C7] '>DEV</button>
-          <button className='border px-4 py-2 rounded-full text-[0.7rem] bg-[#D1D1C7] text-black'>2025</button>
+          <button className='border px-4 py-2 rounded-full text-[0.7rem] bg-[#D1D1C7] text-black'>{data.year}</button>
         </div>
       </div>
 
