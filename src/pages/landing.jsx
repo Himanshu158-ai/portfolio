@@ -1,6 +1,7 @@
 
 import { ArrowDownRight, ArrowUpRight, Menu, X } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
+import MenuCard from "../components/MenuCard";
 
 
 import gsap from "gsap";
@@ -24,11 +25,11 @@ const landing = () => {
     const mainRef = useRef(null);
     const btmRef = useRef(null);
 
-    const scrollToSection = (id,duration=1) => {
+    const scrollToSection = (id, duration = 1) => {
         gsap.to(window, {
             duration,
             scrollTo: `#${id}`,
-            ease:"none",
+            ease: "none",
         });
     };
 
@@ -130,99 +131,76 @@ const landing = () => {
 
     return (
         <div ref={mainRef} className='min-h-screen bg-[#E8E8E3] font-ppwatch sticky top-0 z-0'>
-            <nav ref={navRef} className='relative h-15 flex justify-between items-center px-5 md:px-10 pt-4 md:pt-2'>
+            <nav ref={navRef} className='relative h-15 flex justify-between items-start md:items-center px-2 md:px-10 pt-4 md:pt-2'>
                 <div className="text-[#6B645C] text-sm md:text-[1rem] font-medium tracking-wide w-[10rem] md:w-[20rem]">
                     Web Developer &amp; Designer
                 </div>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex space-x-4">
+                <div className="flex space-x-4 md:flex-row flex-col">
                     <a href="#capabilities" className="group relative overflow-hidden h-6 cursor-pointer"
-                    onClick={(e)=>{
-                        e.preventDefault();
-                        scrollToSection("capabilities");
-                    }}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            scrollToSection("capabilities");
+                        }}
                     >
-                        <span className="flex flex-col text-[#6B645C] text-md font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
+                        <span className="flex flex-col text-[#6B645C] md:text-md text-sm font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
                             <span>Capabilities</span>
                             <span>Capabilities</span>
                         </span>
                     </a>
 
                     <a href="#works" className="group relative overflow-hidden h-6 cursor-pointer"
-                     onClick={(e)=>{
-                        e.preventDefault();
-                        scrollToSection("works",3.4);
-                    }}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            scrollToSection("works", 3.4);
+                        }}
                     >
-                        <span className="flex flex-col text-[#6B645C] text-md font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
+                        <span className="flex flex-col text-[#6B645C] md:text-md text-sm font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
                             <span>Works</span>
                             <span>Works</span>
                         </span>
                     </a>
 
                     <a href="#about" className="group relative overflow-hidden h-6 cursor-pointer"
-                    onClick={(e)=>{
-                        e.preventDefault();
-                        scrollToSection("about",4.7);
-                    }}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            scrollToSection("about", 4.7);
+                        }}
                     >
-                        <span className="flex flex-col text-[#6B645C] text-md font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
+                        <span className="flex flex-col text-[#6B645C] md:text-md text-sm font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
                             <span>About</span>
                             <span>About</span>
                         </span>
                     </a>
 
                     <a href="#contact" className="group relative overflow-hidden h-6 cursor-pointer"
-                    onClick={(e)=>{
-                        e.preventDefault();
-                        scrollToSection("contact",6);
-                    }}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            scrollToSection("contact", 6);
+                        }}
                     >
-                        <span className="flex flex-col text-[#6B645C] text-md font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
+                        <span className="flex flex-col text-[#6B645C] md:text-md text-sm font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
                             <span>Contact</span>
                             <span>Contact</span>
                         </span>
                     </a>
                 </div>
 
-                {/* Mobile Menu Button */}
+                {/* Mobile Menu Button
                 <button
 
-                    className="md:hidden text-[#6B645C]"
+                    className="md:hidden text-[#6B645C] z-30"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {isOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
 
-                {/* Mobile Menu */}
-                {isOpen && (
-                    <div className="absolute top-20 left-5 right-5 bg-[#E8E8E3] border border-[#d3d3cd] rounded-xl p-5 flex flex-col gap-4 md:hidden shadow-sm">
-                        <a href="#capabilities" className="text-[#6B645C] font-medium cursor-pointer" onClick={(e)=>{
-                            e.preventDefault();
-                            scrollToSection("capabilities");
-                            setIsOpen(false);
-                        }}>Capabilities</a>
-                        <a href="#works" className="text-[#6B645C] font-medium cursor-pointer" onClick={(e)=>{
-                            e.preventDefault();
-                            scrollToSection("works",3);
-                            setIsOpen(false);
-                        }}>Works</a>
-                        <a href="#about" className="text-[#6B645C] font-medium cursor-pointer" onClick={(e)=>{
-                            e.preventDefault();
-                            scrollToSection("about",4);
-                            setIsOpen(false);
-                        }}>About</a>
-                        <a href="#contact" className="text-[#6B645C] font-medium cursor-pointer" onClick={(e)=>{
-                            e.preventDefault();
-                            scrollToSection("contact",4.6);
-                            setIsOpen(false);
-                        }}>Contact</a>
-                    </div>
-                )}
+                Mobile Menu
+                {isOpen && <MenuCard isOpen={isOpen} setIsOpen={setIsOpen}/>} */}
             </nav>
 
-            <div className='flex flex-col justify-center items-center px-4 mt-[7.5rem] md:mt-7'>
+            <div className='flex flex-col justify-center items-center px-4 mt-[8rem] md:mt-7'>
                 <h3 ref={nameRef} className='text-[2.8rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#393632] tracking-tight text-center leading-[2.1rem] md:leading-[1] scale-y-150'>
                     HIMANSHU SINGH
                 </h3>
@@ -248,11 +226,11 @@ const landing = () => {
 
                         {/* Content */}
                         <a className="relative z-10 flex items-center gap-2 text-white font-bold text-lg cursor-pointer"
-                        href="#contact"
-                        onClick={(e)=>{
-                            e.preventDefault();
-                            scrollToSection("contact",4.6);
-                        }}
+                            href="#contact"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                scrollToSection("contact", 4.6);
+                            }}
                         >
                             Contact
                             <ArrowUpRight
@@ -267,18 +245,18 @@ const landing = () => {
                 <div className='flex justify-center items-center'>
                     <img ref={imgRef}
                         src="https://i.pinimg.com/1200x/e7/f2/f1/e7f2f17de35ce63c6621c957a3d8c7e8.jpg"
-                        className='h-[10rem] w-[6.5rem] md:h-[15rem] md:w-[11rem] object-cover rounded-md'
+                        className='h-[9rem] w-[6.3rem] md:h-[15rem] md:w-[11rem] object-cover rounded-md'
                         alt="image"
                     />
                 </div>
 
                 <div className='flex justify-center md:justify-end items-center md:items-end'>
                     <div ref={dateRef} className='flex flex-col items-center md:items-end px-5 md:px-10'>
-                        <p className='text-[#6B645C] text-md font-medium tracking-wide'>
+                        <p className='text-[#6B645C] text-md font-medium tracking-tight'>
                             Available For Hire
                         </p>
 
-                        <h2 className='text-[#393632] text-4xl md:text-5xl font-bold tracking-tight'>
+                        <h2 className='text-[#393632] text-3xl md:text-5xl font-bold tracking-tight'>
                             {availableDate}
                         </h2>
                     </div>
@@ -289,3 +267,5 @@ const landing = () => {
 }
 
 export default landing
+
+

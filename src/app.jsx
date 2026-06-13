@@ -22,9 +22,9 @@ const app = () => {
   useEffect(() => {
     gsap.to(curtainRef.current, {
       y: "-100%",
-      duration: 1.8,
+      duration: 1.9,
       ease: "power3.out",
-      delay: 0.5,
+      delay: 0.6,
     });
   }, []);
 
