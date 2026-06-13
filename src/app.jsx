@@ -31,21 +31,25 @@ const app = () => {
   // smooth scroll lenis
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.8,
+      duration: 2.5,
+      easing: (t) => 1 - Math.pow(1 - t, 4),
       smoothWheel: true,
-      wheelMultiplier: 0.9,
-      lerp: 0.08,
+      wheelMultiplier: 0.7,
+      touchMultiplier: 1.5,
+      lerp: 0.05,
     });
 
     lenis.on("scroll", ScrollTrigger.update);
 
-    gsap.ticker.add((time) => {
+    const tickerFn = (time) => {
       lenis.raf(time * 1000);
-    });
+    };
+    gsap.ticker.add(tickerFn);
 
     gsap.ticker.lagSmoothing(0);
 
     return () => {
+      gsap.ticker.remove(tickerFn);
       lenis.destroy();
     };
   }, []);

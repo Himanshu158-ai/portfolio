@@ -222,8 +222,8 @@ const landing = () => {
                 )}
             </nav>
 
-            <div className='flex flex-col justify-center items-center px-4 mt-[7.5rem] md:mt-5'>
-                <h3 ref={nameRef} className='text-[2.8rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#393632] tracking-tight text-center leading-[2.1rem] md:leading-[1] scale-y-160'>
+            <div className='flex flex-col justify-center items-center px-4 mt-[7.5rem] md:mt-7'>
+                <h3 ref={nameRef} className='text-[2.8rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#393632] tracking-tight text-center leading-[2.1rem] md:leading-[1] scale-y-150'>
                     HIMANSHU SINGH
                 </h3>
             </div>
@@ -267,7 +267,7 @@ const landing = () => {
                 <div className='flex justify-center items-center'>
                     <img ref={imgRef}
                         src="https://i.pinimg.com/1200x/e7/f2/f1/e7f2f17de35ce63c6621c957a3d8c7e8.jpg"
-                        className='h-[10rem] w-[6.5rem] md:h-[18rem] md:w-[13rem] object-cover rounded-md'
+                        className='h-[10rem] w-[6.5rem] md:h-[15rem] md:w-[11rem] object-cover rounded-md'
                         alt="image"
                     />
                 </div>

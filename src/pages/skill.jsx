@@ -104,7 +104,7 @@ const Skill = () => {
                 scrollTrigger: {
                     trigger: sectionRef.current,
                     start: '50% top',
-                    end: '+=500',
+                    end: '+=550',
                     scrub: true,
                     // markers:true
                 },
@@ -212,9 +212,9 @@ const Skill = () => {
                         {/* Left Image */}
                         <div className="flex justify-center lg:justify-start">
                             <img
-                                src="https://i.pinimg.com/736x/fe/ce/d9/feced940ac84097e5f76881d376d2748.jpg"
+                                // src="https://i.pinimg.com/736x/fe/ce/d9/feced940ac84097e5f76881d376d2748.jpg"
                                 // src='https://i.pinimg.com/736x/0a/5a/d0/0a5ad04ded73ddfa88bead239be71ce5.jpg'
-                                // src='https://i.pinimg.com/736x/f4/71/55/f47155707c3d433ebdf05a8dc7fcdc23.jpg'
+                                src='https://i.pinimg.com/736x/f4/71/55/f47155707c3d433ebdf05a8dc7fcdc23.jpg'
                                 alt="about"
                                 className="w-full max-w-[350px] h-[500px] object-cover rounded-sm"
                             />
@@ -238,7 +238,7 @@ const Skill = () => {
                                     </span>
                                 </div>
 
-                                <div className="space-y-5 text-base md:text-[0.9rem] leading-[1.25] text-[#D1D1C7] min-w-0 max-w-[450px]">
+                                <div className="space-y-6 text-base md:text-[0.9rem] leading-[1.24] text-[#D1D1C7] min-w-0 max-w-[450px]">
                                     <p className='text-[1rem] font-light tracking-wide'>
                                         I build modern web applications and AI-powered experiences with a focus on performance, scalability, and clean design. Passionate about turning complex ideas into simple, useful, and production-ready products.
                                     </p>

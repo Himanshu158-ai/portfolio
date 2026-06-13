@@ -31,17 +31,17 @@ const Contact = () => {
         ref={cardRef}
         className='bg-[linear-gradient(to_bottom,#151513_0%,#121210_35%,#1A1815_65%,#2B2823_100%)] md:mx-20 mx-4 min-h-screen flex flex-col items-center justify-center relative -top-30 md:-top-25 rounded-[5px]'
       >
-        <div className='md:max-w-[60%] max-w-[90%] text-center py-5 uppercase flex items-center justify-center'>
-          <h1 className='text-2xl md:text-6xl font-bold font-ppwatch text-[#E8E8E3]'>let's make it together</h1>
+        <div className='md:max-w-[60%] max-w-[90%] text-center py-5 flex items-center justify-center'>
+          <h1 className='text-[2rem] md:text-6xl font-bold font-ppwatch text-[#D1D1C7] uppercase'>let's make it together</h1>
         </div>
         <section className="w-full md:max-w-[60%]  px-4 md:px-8 py-8">
           <div className="max-w-5xl mx-auto rounded-[30px] border border-[#3d3d3d] bg-transparent px-6 md:px-14 py-12">
 
-            <h2 className="text-center text-[#E8E8E3] text-2xl md:text-3xl font-medium mb-12">
+            <h2 className="text-center text-[#D1D1C7] text-2xl md:text-3xl font-medium mb-12 font-ppwatch">
               Have a project in mind?
             </h2>
 
-            <form className="flex flex-col gap-8">
+            <form className="flex flex-col gap-8 font-ppwatch">
 
               <input
                 type="text"
@@ -92,7 +92,7 @@ focus:shadow-[0_10px_30px_rgba(0,0,0,0.3)]
               />
 
               <textarea
-                placeholder="Tell me about your business or project"
+                placeholder="Tell me about your business or project."
                 className="
 w-full
 md:h-30 h-30
