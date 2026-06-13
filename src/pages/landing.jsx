@@ -130,7 +130,7 @@ const landing = () => {
 
     return (
         <div ref={mainRef} className='min-h-screen bg-[#E8E8E3] font-ppwatch sticky top-0 z-0'>
-            <nav ref={navRef} className='relative h-15 flex justify-between items-start md:items-center px-2 md:px-10 pt-4 md:pt-2'>
+            <nav ref={navRef} className='relative h-15 flex justify-between items-start md:items-center px-3 md:px-10 pt-5 md:pt-2'>
                 <div className="text-[#6B645C] text-sm md:text-[1rem] font-medium tracking-wide w-[10rem] md:w-[20rem]">
                     Web Developer &amp; Designer
                 </div>
@@ -187,8 +187,8 @@ const landing = () => {
                 </div>
             </nav>
 
-            <div className="flex flex-col gap-5 md:gap-20 mt-25 md:mt-3 w-full md:px-0">
-                <div className='flex flex-col justify-center items-center mt-[8rem] md:mt-12 w-[73%] md:w-full pl-5 md:pl-0'>
+            <div className="flex flex-col gap-5 md:gap-20 mt-26 md:mt-3 w-full md:px-0">
+                <div className='flex flex-col justify-center items-center mt-[8rem] md:mt-12 w-[74%] md:w-full pl-5 md:pl-0'>
                     <h3 ref={nameRef} className='text-[2.3rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#393632] tracking-tighter text-start leading-[1.8rem] md:leading-[1] md:scale-y-180'>
                         HIMANSHU SINGH
                     </h3>
@@ -234,7 +234,7 @@ const landing = () => {
                         <div className='flex justify-center items-center'>
                             <img ref={imgRef}
                                 src="https://i.pinimg.com/1200x/e7/f2/f1/e7f2f17de35ce63c6621c957a3d8c7e8.jpg"
-                                className='h-[8rem] w-[6.5rem] md:h-[16rem] md:w-[12rem] object-cover rounded-md'
+                                className='h-[9rem] w-[6.7rem] md:h-[16rem] md:w-[12rem] object-cover rounded-md'
                                 alt="image"
                             />
                         </div>
