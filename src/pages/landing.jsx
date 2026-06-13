@@ -176,7 +176,7 @@ const landing = () => {
                     <a href="#contact" className="group relative overflow-hidden h-6 cursor-pointer"
                         onClick={(e) => {
                             e.preventDefault();
-                            scrollToSection("contact", 4.4);
+                            scrollToSection("contact", 4.6);
                         }}
                     >
                         <span className="flex flex-col text-[#6B645C] md:text-md text-sm font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
@@ -187,10 +187,10 @@ const landing = () => {
                 </div>
             </nav>
 
-            <div className="flex flex-col gap-5 md:gap-20 mt-26 md:mt-3 w-full md:px-0">
-                <div className='flex flex-col justify-center items-center mt-[8rem] md:mt-12 w-[74%] md:w-full pl-5 md:pl-0'>
-                    <h3 ref={nameRef} className='text-[2.3rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#393632] tracking-tighter text-start leading-[1.8rem] md:leading-[1] md:scale-y-180'>
-                        HIMANSHU SINGH
+            <div className="flex flex-col gap-5 md:gap-20 mt-24 md:mt-3 w-full md:px-0">
+                <div className='flex flex-col justify-center items-start md:items-center mt-[8rem] md:mt-12 w-full pl-5 md:pl-0'>
+                    <h3 ref={nameRef} className='text-[2rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#393632] tracking-tighter leading-[1.7rem] md:leading-[1] md:scale-y-180'>
+                        HIMANSHU<br className='md:hidden' /> SINGH
                     </h3>
                 </div>
 
@@ -233,10 +233,10 @@ const landing = () => {
                     <div className=" flex items-end md:w-[60%] w-full justify-between px-5">
                         <div className='flex justify-center items-center'>
                             <img ref={imgRef}
-    src="https://i.pinimg.com/1200x/24/2d/27/242d274244a9418715f036fedea751d9.jpg"
-    className='h-[9rem] w-[6.7rem] md:h-[16rem] md:w-[12rem] object-cover rounded-md grayscale'
-    alt="image"
-/>
+                                src="https://i.pinimg.com/1200x/24/2d/27/242d274244a9418715f036fedea751d9.jpg"
+                                className='h-[9.2rem] w-[6.9rem] md:h-[16rem] md:w-[12rem] object-cover rounded-md grayscale'
+                                alt="image"
+                            />
                         </div>
 
                         <div className='flex justify-center md:justify-end items-center md:items-end'>
