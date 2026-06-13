@@ -129,7 +129,7 @@ const landing = () => {
     }, []);
 
     return (
-        <div ref={mainRef} className='min-h-screen bg-[#E8E8E3] font-ppwatch sticky top-0 z-0'>
+        <div ref={mainRef} className='min-h-screen h-screen bg-[#E8E8E3] font-ppwatch sticky top-0 z-0'>
             <nav ref={navRef} className='relative h-15 flex justify-between items-start md:items-center px-3 md:px-10 pt-5 md:pt-2'>
                 <div className="text-[#6B645C] text-sm md:text-[1rem] font-medium tracking-wide w-[10rem] md:w-[20rem]">
                     Web Developer &amp; Designer
@@ -187,9 +187,9 @@ const landing = () => {
                 </div>
             </nav>
 
-            <div className="flex flex-col gap-5 md:gap-20 mt-24 md:mt-3 w-full md:px-0">
+            <div className="flex flex-col gap-5 md:gap-20 mt-20 md:mt-3 w-full md:px-0">
                 <div className='flex flex-col justify-center items-start md:items-center mt-[8rem] md:mt-12 w-full pl-5 md:pl-0'>
-                    <h3 ref={nameRef} className='text-[2rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#393632] tracking-tighter leading-[1.7rem] md:leading-[1] md:scale-y-180'>
+                    <h3 ref={nameRef} className='text-[2rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#393632] tracking-tight leading-[1.7rem] md:leading-[1] md:scale-y-180 scale-y-[1.8] mb-4 md:mb-0'>
                         HIMANSHU<br className='md:hidden' /> SINGH
                     </h3>
                 </div>

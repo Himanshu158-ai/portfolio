@@ -78,7 +78,7 @@ const work = () => {
 
         <h1
           ref={headingRef}
-          className='text-[2.8rem] md:text-6xl tracking-tighter font-semibold flex flex-wrap'
+          className='text-[2.6rem] md:text-6xl tracking-tighter font-semibold flex flex-wrap'
         >
           {"WHAT I DO /".split("").map((char, index) => (
             <span key={index} className="overflow-hidden">
