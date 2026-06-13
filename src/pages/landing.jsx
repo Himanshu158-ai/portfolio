@@ -152,7 +152,7 @@ const landing = () => {
                     <a href="#works" className="group relative overflow-hidden h-6 cursor-pointer"
                         onClick={(e) => {
                             e.preventDefault();
-                            scrollToSection("works", 3.4);
+                            scrollToSection("works", 2);
                         }}
                     >
                         <span className="flex flex-col text-[#6B645C] md:text-md text-sm font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
@@ -164,7 +164,7 @@ const landing = () => {
                     <a href="#about" className="group relative overflow-hidden h-6 cursor-pointer"
                         onClick={(e) => {
                             e.preventDefault();
-                            scrollToSection("about", 4.7);
+                            scrollToSection("about", 3);
                         }}
                     >
                         <span className="flex flex-col text-[#6B645C] md:text-md text-sm font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
@@ -176,7 +176,7 @@ const landing = () => {
                     <a href="#contact" className="group relative overflow-hidden h-6 cursor-pointer"
                         onClick={(e) => {
                             e.preventDefault();
-                            scrollToSection("contact", 6);
+                            scrollToSection("contact", 4.4);
                         }}
                     >
                         <span className="flex flex-col text-[#6B645C] md:text-md text-sm font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
@@ -233,10 +233,10 @@ const landing = () => {
                     <div className=" flex items-end md:w-[60%] w-full justify-between px-5">
                         <div className='flex justify-center items-center'>
                             <img ref={imgRef}
-                                src="https://i.pinimg.com/1200x/e7/f2/f1/e7f2f17de35ce63c6621c957a3d8c7e8.jpg"
-                                className='h-[9rem] w-[6.7rem] md:h-[16rem] md:w-[12rem] object-cover rounded-md'
-                                alt="image"
-                            />
+    src="https://i.pinimg.com/1200x/24/2d/27/242d274244a9418715f036fedea751d9.jpg"
+    className='h-[9rem] w-[6.7rem] md:h-[16rem] md:w-[12rem] object-cover rounded-md grayscale'
+    alt="image"
+/>
                         </div>
 
                         <div className='flex justify-center md:justify-end items-center md:items-end'>

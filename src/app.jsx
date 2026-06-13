@@ -19,14 +19,14 @@ const app = () => {
 
   const curtainRef = useRef(null);
 
-  // useEffect(() => {
-  //   gsap.to(curtainRef.current, {
-  //     y: "-100%",
-  //     duration: 1.9,
-  //     ease: "power3.out",
-  //     delay: 0.6,
-  //   });
-  // }, []);
+  useEffect(() => {
+    gsap.to(curtainRef.current, {
+      y: "-100%",
+      duration: 1.9,
+      ease: "power3.out",
+      delay: 0.6,
+    });
+  }, []);
 
   // smooth scroll lenis
   useEffect(() => {
@@ -56,7 +56,7 @@ const app = () => {
 
   return (
     <>
-      {/* <svg width="0" height="0">
+      <svg width="0" height="0">
         <defs>
           <clipPath id="curtainClip" clipPathUnits="objectBoundingBox">
             <path d="M0,0 L1,0 L1,0.88 Q0.5,0.68 0,0.88 Z" />
@@ -67,7 +67,7 @@ const app = () => {
         ref={curtainRef}
         className="fixed w-full h-[130vh] bg-black z-[9999]"
         style={{ clipPath: "url(#curtainClip)" }}
-      /> */}
+      />
 
       <Landing />
       <Work />

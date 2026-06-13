@@ -1,6 +1,20 @@
 import React from 'react'
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const footer = () => {
+
+    const scrollToSection = (id, duration = 1) => {
+        gsap.to(window, {
+            duration,
+            scrollTo: `#${id}`,
+            ease: "none",
+        });
+    };
+
   return (
     <div className='h-[80vh] w-full font-ppwatch px-6 md:px-12 pt-60 relative z-10'>
       <div className='grid grid-cols-2 gap-12 md:gap-24'>
@@ -13,8 +27,12 @@ const footer = () => {
 
           <div className='flex flex-col gap-3 text-[#6B645C]'>
             <a
-              href="#"
+              href="#hommie"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
+              onClick={(e)=>{
+                e.preventDefault();
+                scrollToSection("hommie",4.6);
+              }}
             >
               <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 Home
@@ -25,8 +43,12 @@ const footer = () => {
               </span>
             </a>
             <a
-              href="#"
+              href="#about"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
+              onClick={(e)=>{
+                e.preventDefault();
+                scrollToSection("about",1.4);
+              }}
             >
               <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 About
@@ -37,20 +59,28 @@ const footer = () => {
               </span>
             </a>
             <a
-              href="#"
+              href="#works"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
+              onClick={(e)=>{
+                e.preventDefault();
+                scrollToSection("works",2);
+              }}
             >
               <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
-                Projects
+                Works
               </span>
 
               <span className="absolute inset-0 translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
-                Projects
+                Works
               </span>
             </a>
             <a
-              href="#"
+              href="#contact"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
+              onClick={(e)=>{
+                e.preventDefault();
+                scrollToSection("contact");
+              }}
             >
               <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 Contact
@@ -61,10 +91,11 @@ const footer = () => {
               </span>
             </a>
             <a
-              href="#"
-              className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
+              href="..."
+              className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit pointer-events-none opacity-50"
             >
-              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
+              <span 
+              className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 Resume
               </span>
 
