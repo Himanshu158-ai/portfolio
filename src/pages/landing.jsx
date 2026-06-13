@@ -12,7 +12,6 @@ import SplitType from "split-type";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const landing = () => {
-    const [isOpen, setIsOpen] = useState(false);
     const [availableDate, setAvailableDate] = useState("");
 
     const nameRef = useRef(null);
@@ -186,79 +185,71 @@ const landing = () => {
                         </span>
                     </a>
                 </div>
-
-                {/* Mobile Menu Button
-                <button
-
-                    className="md:hidden text-[#6B645C] z-30"
-                    onClick={() => setIsOpen(!isOpen)}
-                >
-                    {isOpen ? <X size={28} /> : <Menu size={28} />}
-                </button>
-
-                Mobile Menu
-                {isOpen && <MenuCard isOpen={isOpen} setIsOpen={setIsOpen}/>} */}
             </nav>
 
-            <div className='flex flex-col justify-center items-center px-4 mt-[8rem] md:mt-7'>
-                <h3 ref={nameRef} className='text-[2.8rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#393632] tracking-tight text-center leading-[2.1rem] md:leading-[1] scale-y-150'>
-                    HIMANSHU SINGH
-                </h3>
-            </div>
-
-            <div ref={btmRef} className='grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0 pt-10 md:mt-12 md:h-[calc(100vh-15rem)]'>
-
-                <div className='flex flex-col justify-around items-center md:items-start px-5 md:px-10 gap-6 md:gap-0 text-center md:text-left'>
-                    <ArrowDownRight
-                        ref={arrowRef}
-                        className="text-[#6B645C] text-md font-medium tracking-wide hidden md:block"
-                        size={40}
-                    />
-
-                    <p ref={descRef} className='w-full md:w-6/5 text-sm md:text-[1.2rem] font-medium text-[#6B645C] tracking-wide'>
-                        Building modern web experiences where scalable engineering meets the power of Generative AI.
-                    </p>
-
-                    <button ref={btnRef} className="group relative overflow-hidden rounded-full bg-[#393632] px-8 py-3">
-
-                        {/* Hover Background */}
-                        <span className="absolute inset-0 bg-[#8C8C73] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)]"></span>
-
-                        {/* Content */}
-                        <a className="relative z-10 flex items-center gap-2 text-white font-bold text-lg cursor-pointer"
-                            href="#contact"
-                            onClick={(e) => {
-                                e.preventDefault();
-                                scrollToSection("contact", 4.6);
-                            }}
-                        >
-                            Contact
-                            <ArrowUpRight
-                                size={22}
-                                className="transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1"
-                            />
-                        </a>
-
-                    </button>
+            <div className="flex flex-col gap-5 md:gap-20 mt-25 md:mt-3 w-full md:px-0">
+                <div className='flex flex-col justify-center items-center mt-[8rem] md:mt-12 w-[73%] md:w-full pl-5 md:pl-0'>
+                    <h3 ref={nameRef} className='text-[2.3rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#393632] tracking-tighter text-start leading-[1.8rem] md:leading-[1] md:scale-y-180'>
+                        HIMANSHU SINGH
+                    </h3>
                 </div>
 
-                <div className='flex justify-center items-center'>
-                    <img ref={imgRef}
-                        src="https://i.pinimg.com/1200x/e7/f2/f1/e7f2f17de35ce63c6621c957a3d8c7e8.jpg"
-                        className='h-[9rem] w-[6.3rem] md:h-[15rem] md:w-[11rem] object-cover rounded-md'
-                        alt="image"
-                    />
-                </div>
+                <div ref={btmRef} className='flex justify-between w-full gap-10 flex-col md:flex-row'>
 
-                <div className='flex justify-center md:justify-end items-center md:items-end'>
-                    <div ref={dateRef} className='flex flex-col items-center md:items-end px-5 md:px-10'>
-                        <p className='text-[#6B645C] text-md font-medium tracking-tight'>
-                            Available For Hire
+                    <div className='flex flex-col justify-around items-start md:items-start px-5 md:px-10 gap-6 md:gap-0 text-center md:text-left md:w-[40%] w-full'>
+                        <ArrowDownRight
+                            ref={arrowRef}
+                            className="text-[#6B645C] text-md font-medium tracking-wide hidden md:block"
+                            size={40}
+                        />
+
+                        <p ref={descRef} className='w-[80%] md:w-6/5 text-sm md:text-[1.2rem] font-medium text-[#6B645C] tracking-wide text-start'>
+                            Building modern web experiences where scalable engineering meets the power of Generative AI.
                         </p>
 
-                        <h2 className='text-[#393632] text-3xl md:text-5xl font-bold tracking-tight'>
-                            {availableDate}
-                        </h2>
+                        <button ref={btnRef} className="group relative overflow-hidden rounded-full bg-[#393632] px-5 py-3">
+
+                            {/* Hover Background */}
+                            <span className="absolute inset-0 bg-[#8C8C73] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)]"></span>
+
+                            {/* Content */}
+                            <a className="relative z-10 flex items-center gap-2 text-white font-bold text-lg cursor-pointer"
+                                href="#contact"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    scrollToSection("contact", 4.6);
+                                }}
+                            >
+                                Contact
+                                <ArrowUpRight
+                                    size={22}
+                                    className="transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1"
+                                />
+                            </a>
+
+                        </button>
+                    </div>
+
+                    <div className=" flex items-end md:w-[60%] w-full justify-between px-5">
+                        <div className='flex justify-center items-center'>
+                            <img ref={imgRef}
+                                src="https://i.pinimg.com/1200x/e7/f2/f1/e7f2f17de35ce63c6621c957a3d8c7e8.jpg"
+                                className='h-[8rem] w-[6.5rem] md:h-[16rem] md:w-[12rem] object-cover rounded-md'
+                                alt="image"
+                            />
+                        </div>
+
+                        <div className='flex justify-center md:justify-end items-center md:items-end'>
+                            <div ref={dateRef} className='flex flex-col items-center md:items-end md:px-10 md:text-center'>
+                                <p className='text-[#6B645C] text-md font-medium tracking-tight'>
+                                    Available For Hire
+                                </p>
+
+                                <h2 className='text-[#393632] text-3xl md:text-6xl md:font-medium font-bold tracking-tight scale-y-130 md:text-center'>
+                                    {availableDate}
+                                </h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
