@@ -61,11 +61,11 @@ const ProjectCards = ({ data }) => {
 
 
       <p className='text-sm font-light tracking-wider text-[#D1D1C7]/70'>{data.subtitle}</p>
-      <div className='flex justify-between w-full items-center'>
-        <h2 className='text-xl md:text-2xl font-semibold tracking-tight text-[#D1D1C7]'>{data.title}</h2>
+      <div className='flex justify-between w-full items-center md:flex-row flex-col mt-3 md:mt-0 items-start gap-2'>
+        <h2 className='text-[2rem] md:text-[2.5] font-semibold tracking-tight text-[#D1D1C7]'>{data.title}</h2>
         <div className="flex gap-2">
-          <button className='border border-[#D1D1C7]/40 px-4 py-2 rounded-full text-[0.7rem] text-[#D1D1C7] '>DEV</button>
-          <button className='border px-4 py-2 rounded-full text-[0.7rem] bg-[#D1D1C7] text-black'>{data.year}</button>
+          <button className='border border-[#D1D1C7]/40 px-4 py-2 rounded-full text-[0.7rem] md:text-[0.8rem] text-[#D1D1C7] '>DEVELOPMENT</button>
+          <button className='border px-4 py-2 rounded-full text-[0.7rem] md:text-[0.8rem] bg-[#D1D1C7] text-black'>{data.year}</button>
         </div>
       </div>
 

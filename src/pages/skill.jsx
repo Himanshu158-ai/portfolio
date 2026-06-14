@@ -212,16 +212,16 @@ const Skill = () => {
                         {/* Left Image */}
                         <div className="flex justify-center lg:justify-start">
                             <div className="relative group w-full max-w-[350px]">
-                                <div className="absolute -inset-2 border border-[#6B645C]/30 rounded-sm translate-x-3 translate-y-3 -z-10 transition-transform duration-500 group-hover:translate-x-2 group-hover:translate-y-2"></div>
+                                <div className="absolute -inset-2 border border-[#6B645C]/30 rounded-sm translate-x-3 translate-y-3 -z-10"></div>
 
                                 <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden rounded-sm">
                                     <img
-                                        src='https://i.pinimg.com/736x/c1/89/5e/c1895edcb393ca043fc79435700ed7da.jpg'
+                                        src='https://i.pinimg.com/1200x/24/2d/27/242d274244a9418715f036fedea751d9.jpg'
                                         alt="about"
-                                        className="w-full h-full object-cover sepia-[0.4] contrast-110 brightness-80 blur-[1px] scale-105 transition-all duration-700 ease-out group-hover:sepia-0 group-hover:blur-0 group-hover:brightness-100 group-hover:scale-100"
+                                        className="w-full h-full object-cover"
                                     />
 
-                                    <div className="absolute inset-0 bg-[#6B645C]/20 mix-blend-color transition-opacity duration-700 group-hover:opacity-0"></div>
+                                    <div className="absolute inset-0 bg-[#6B645C]/20 mix-blend-color transition-opacity duration-700 "></div>
 
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none"></div>
                                 </div>
