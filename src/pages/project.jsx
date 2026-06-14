@@ -12,7 +12,7 @@ const projects = [
   {
     title: "Aura",
     subtitle: "Your Multi-Agent Resume Builder",
-    D: "https://i.pinimg.com/736x/b2/7a/45/b27a45abfc28992c9c004793231c2c89.jpg",
+    D: "https://i.pinimg.com/736x/9d/18/68/9d186847a118241d3e8d0f32bac4adbe.jpg",
     link: "https://resume-builder-llm.vercel.app/",
     year:"2026"
 
@@ -20,14 +20,14 @@ const projects = [
   {
     title: "NexHire",
     subtitle: "Where Talent Meets Opportunity",
-    D: "https://i.pinimg.com/1200x/f3/fe/4e/f3fe4e50c9299ae4e16328a935d80078.jpg",
+    D: "https://i.pinimg.com/1200x/75/95/e3/7595e3245b90d08cde4b34a2643eecd6.jpg",
     link: "https://next-hire-gamma.vercel.app/",
     year:"2026"
   },
   {
     title: "CineVerse",
     subtitle: "Explore Stories Beyond Screens",
-    D: "https://i.pinimg.com/1200x/ec/9c/13/ec9c13b5b06e1d8bb82c2ebde5408694.jpg",
+    D: "https://i.pinimg.com/1200x/a5/86/ac/a586ac3a3aaf5bd37bfbb32104599000.jpg",
     link: "https://cineverse-dun.vercel.app/",
     year:"2025"
   },
