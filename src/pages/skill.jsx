@@ -228,7 +228,7 @@ const Skill = () => {
                         </div>
 
                         {/* Right Content */}
-                        <div className="flex flex-col w-full bg-green-400">
+                        <div className="flex flex-col w-full">
 
                             {/* Heading */}
                             <h2 className="text-[1rem] md:text-[1.5rem] leading-[1.2] font-medium md:w-[600px] text-left md:mt-10">
@@ -237,7 +237,7 @@ const Skill = () => {
                             </h2>
 
                             {/* Bottom Section */}
-                            <div className="mt-16 md:mt-24 grid md:grid-cols-[180px_1fr] gap-8 md:gap-2 bg-yellow-400 w-full">
+                            <div className="mt-16 md:mt-24 grid md:grid-cols-[180px_1fr] gap-8 md:gap-2 w-full">
 
                                 <div>
                                     <span className="text-[1rem] md:text-[1.2rem] font-medium tracking-wide">
@@ -245,12 +245,12 @@ const Skill = () => {
                                     </span>
                                 </div>
 
-                                <div className="space-y-6 text-base md:text-[0.9rem] leading-[1.24] text-[#D1D1C7] md:max-w-[450px] bg-red-400 w-full">
-                                    <p className='text-[0.9rem] md:text-[1rem] font-light tracking-tight  bg-pink-400 mr-6 min-w-[100%]'>
+                                <div className="space-y-6 text-base md:text-[0.9rem] leading-[1.24] text-[#D1D1C7] md:max-w-[450px] w-full">
+                                    <p className='text-[0.9rem] md:text-[1rem] font-light tracking-tight mr-6 min-w-full'>
                                         I build modern web applications and AI-powered experiences with a focus on performance, scalability, and clean design. Passionate about turning complex ideas into simple, useful, and production-ready products.
                                     </p>
 
-                                    <p className='text-[0.9rem] md:text-[1rem] font-light tracking-tight bg-pink-400 mr-6 min-w-[82%]'>
+                                    <p className='text-[0.9rem] md:text-[1rem] font-light tracking-tight mr-6 min-w-full'>
                                         Whether it’s a full-stack platform, an intelligent AI tool, or an interactive user experience, I enjoy creating software that delivers real value and feels effortless to use.
                                     </p>
                                 </div>
