@@ -107,7 +107,7 @@ const work = () => {
         </div>
       </div>
 
-      <div className="relative h-[400vh]">
+      <div className="relative h-[300vh] md:h-[400vh]">
         {cardsData.map((card, i) => (
           <div
             key={i}

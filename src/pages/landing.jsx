@@ -187,7 +187,7 @@ const landing = () => {
                 </div>
             </nav>
 
-            <div className="flex flex-col gap-5 md:gap-20 mt-20 md:mt-3 w-full md:px-0">
+            <div className="flex flex-col gap-5 md:gap-20 mt-10 sm:mt-20 md:mt-3 lg:mt-3 xl:mt-30 w-full md:px-0">
                 <div className='flex flex-col justify-center items-start md:items-center mt-[8rem] md:mt-12 w-full pl-5 md:pl-0'>
                     <h3 ref={nameRef} className='text-[2rem] sm:text-[4rem] md:text-[6rem] font-bold text-[#393632] tracking-tight leading-[1.7rem] md:leading-[1] md:scale-y-180 scale-y-[1.8] mb-4 md:mb-0'>
                         HIMANSHU<br className='md:hidden' /> SINGH
