@@ -246,12 +246,12 @@ const Skill = () => {
                                 </div>
 
                                 <div className="space-y-6 text-base md:text-[0.9rem] leading-[1.24] text-[#D1D1C7] md:max-w-[450px] w-full">
-                                    <p className='text-[0.9rem] md:text-[1rem] font-light tracking-tight mr-6 min-w-full'>
-                                        I build modern web applications and AI-powered experiences with a focus on performance, scalability, and clean design. Passionate about turning complex ideas into simple, useful, and production-ready products.
+                                    <p className='text-[0.9rem] md:text-[1rem] font-light tracking-tight  pr-5 tex-left'>
+                                        I enjoy building modern web applications that are fast, scalable, and easy to use. My focus is on creating clean, reliable products that solve real problems.
                                     </p>
 
-                                    <p className='text-[0.9rem] md:text-[1rem] font-light tracking-tight mr-6 min-w-full'>
-                                        Whether it’s a full-stack platform, an intelligent AI tool, or an interactive user experience, I enjoy creating software that delivers real value and feels effortless to use.
+                                    <p className='text-[0.9rem] md:text-[1rem] font-light tracking-tight min-w-full'>
+                                       My interests extend beyond traditional web development into Generative AI, where I enjoy experimenting, learning, and building. I’m particularly excited about creating products that combine modern web technologies with intelligent AI experiences.
                                     </p>
                                 </div>
 
