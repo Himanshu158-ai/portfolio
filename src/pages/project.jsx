@@ -104,11 +104,11 @@ const Project = () => {
       className="w-screen bg-[#080807] text-[#D1D1C7] font-ppwatch relative z-10"
       id="works"
     >
-      <div className="px-5 md:px-[4rem] py-10 md:py-20 flex flex-col gap-16 md:gap-20">
+      <div className="px-5 md:px-[4rem] py-10 md:py-20 flex flex-col gap-16 md:gap-20 items-start">
 
         <h1
           ref={headingRef}
-          className='text-[2.8rem] md:text-6xl tracking-tighter font-semibold flex flex-wrap'
+          className='text-[2.7rem] md:text-6xl tracking-tighter font-semibold flex flex-wrap'
         >
           {"SELECTED WORKS /".split("").map((char, index) => (
             <span key={index} className="overflow-hidden">
@@ -123,11 +123,11 @@ const Project = () => {
           ref={contentRef}
           className='flex justify-between items-start flex-col md:flex-row gap-4 md:gap-15 w-[90%] md:w-[55%] md:ml-[45%]'
         >
-          <h1 className='text-[1.1rem] font-light tracking-wide'>
+          <h1 className='text-[1rem] md:text-[1.2rem] font-medium tracking-wide'>
             (PROJECTS)
           </h1>
 
-          <p className='text-[1rem] font-light tracking-wide'>
+          <p className='text-[0.9rem] md:text-[1rem] font-light tracking-tight'>
             From AI-powered tools to full-stack web applications, these projects showcase my ability to build scalable, user-focused, and production-ready digital products.
           </p>
         </div>

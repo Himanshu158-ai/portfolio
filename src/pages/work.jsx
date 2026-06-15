@@ -78,7 +78,7 @@ const work = () => {
 
         <h1
           ref={headingRef}
-          className='text-[2.6rem] md:text-6xl tracking-tighter font-semibold flex flex-wrap'
+          className='text-[2.3rem] md:text-6xl tracking-tighter font-semibold flex flex-wrap'
         >
           {"WHAT I DO /".split("").map((char, index) => (
             <span key={index} className="overflow-hidden">
@@ -94,11 +94,11 @@ const work = () => {
           className='flex justify-between items-start flex-col md:flex-row gap-5 md:gap-15 w-full md:w-[55%] md:ml-[45%]'
           
         >
-          <h1 className='text-[1.1rem] font-light tracking-wide'>
+          <h1 className='text-[1rem] md:text-[1.2rem] font-medium tracking-wide'>
             (Capabilities)
           </h1>
 
-          <p className='text-[1rem] font-light tracking-wide'>
+          <p className='text-[0.9rem] md:text-[1rem] font-light tracking-tight'>
             MERN Stack Developer crafting scalable web applications, intelligent
             AI-powered solutions, and interactive user experiences. Focused on
             building clean, performant, and production-ready products that solve

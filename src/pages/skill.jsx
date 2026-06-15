@@ -50,7 +50,7 @@ const skillColumns = [
         ],
     },
     {
-        heading: 'Frameworks\n& Libraries',
+        heading: 'Frameworks\n& Librarie',
         items: [
             'React',
             'Node.js',
@@ -161,7 +161,7 @@ const Skill = () => {
                         <div className="grid grid-cols-3 gap-x-8 gap-y-2 w-full px-6">
                             {skillColumns.map((col, ci) => (
                                 <div key={ci}>
-                                    <h3 className="font-medium mb-3 whitespace-pre-line text-[0.75rem] md:text-[1rem] md:font-semibold">
+                                    <h3 className="font-light mb-3 text-[0.75rem] md:text-[1rem] md:font-semibold">
                                         {col.heading}
                                     </h3>
                                     <hr className='pt-4 opacity-30' />
@@ -204,10 +204,9 @@ const Skill = () => {
                     </div>
                 </section>
 
-                <section
-                    // ref={sectionRef}
-                    className="pt-20 w-full bg-[#080807] text-[#D1D1C7] md:px-8 py-12 font-ppwatch rounded-b-[2rem] z-20 relative">
-                    <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-10 md:gap-0 h-full px-10">
+                <section className="pt-20  bg-[#080807] text-[#D1D1C7] md:px-8 py-12 font-ppwatch rounded-b-[2rem] z-20 relative w-full">
+
+                    <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-10 md:gap-0 h-full px-5">
 
                         {/* Left Image */}
                         <div className="flex justify-center lg:justify-start">
@@ -229,7 +228,7 @@ const Skill = () => {
                         </div>
 
                         {/* Right Content */}
-                        <div className="flex flex-col">
+                        <div className="flex flex-col w-full bg-green-400">
 
                             {/* Heading */}
                             <h2 className="text-[1rem] md:text-[1.5rem] leading-[1.2] font-medium md:w-[600px] text-left md:mt-10">
@@ -238,20 +237,20 @@ const Skill = () => {
                             </h2>
 
                             {/* Bottom Section */}
-                            <div className="mt-16 md:mt-24 grid md:grid-cols-[180px_1fr] gap-8 md:gap-2">
+                            <div className="mt-16 md:mt-24 grid md:grid-cols-[180px_1fr] gap-8 md:gap-2 bg-yellow-400 w-full">
 
                                 <div>
-                                    <span className="text-[1.1rem] font-light tracking-wide">
+                                    <span className="text-[1rem] md:text-[1.2rem] font-medium tracking-wide">
                                         (About Me)
                                     </span>
                                 </div>
 
-                                <div className="space-y-6 text-base md:text-[0.9rem] leading-[1.24] text-[#D1D1C7] min-w-0 max-w-[450px]">
-                                    <p className='text-[1rem] font-light tracking-wide'>
+                                <div className="space-y-6 text-base md:text-[0.9rem] leading-[1.24] text-[#D1D1C7] md:max-w-[450px] bg-red-400 w-full">
+                                    <p className='text-[0.9rem] md:text-[1rem] font-light tracking-tight  bg-pink-400 mr-6 min-w-[100%]'>
                                         I build modern web applications and AI-powered experiences with a focus on performance, scalability, and clean design. Passionate about turning complex ideas into simple, useful, and production-ready products.
                                     </p>
 
-                                    <p className='text-[1rem] font-light tracking-wide'>
+                                    <p className='text-[0.9rem] md:text-[1rem] font-light tracking-tight bg-pink-400 mr-6 min-w-[82%]'>
                                         Whether it’s a full-stack platform, an intelligent AI tool, or an interactive user experience, I enjoy creating software that delivers real value and feels effortless to use.
                                     </p>
                                 </div>

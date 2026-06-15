@@ -18,7 +18,7 @@ const WorksCards = ({ data, idx }) => {
           </h1>
 
           <div className="flex flex-col gap-8 mt-3 text-md font-light">
-            <p className="text-[1rem] font-light tracking-tight md:w-[60%]">
+            <p className="text-[0.9rem] md:text-[1rem] font-light tracking-tight md:w-[60%]">
               {data.desc}
             </p>
 
@@ -26,11 +26,11 @@ const WorksCards = ({ data, idx }) => {
               {data.skills.map((skill, skillIdx) => (
                 <React.Fragment key={skillIdx}>
                   <div className="flex items-center gap-8">
-                    <span className="text-md font-light tracking-tight">
-                      {String(skillIdx + 1).padStart(2, "0")}
+                    <span className="text-[0.9rem] md:text-[1rem] font-light tracking-tight">
+                      {String(skillIdx + 1).padStart(2, "0")}.
                     </span>
 
-                    <h2 className="text-[1rem] md:text-[1.25rem] font-medium tracking-wide">
+                    <h2 className="text-[0.9rem] md:text-[1rem] font-light tracking-wide">
                       {skill}
                     </h2>
                   </div>
