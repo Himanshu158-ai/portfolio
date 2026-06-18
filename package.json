@@ -16,6 +16,7 @@
     "lucide-react": "^1.17.0",
     "preact": "^10.27.2",
     "split-type": "^0.3.4",
+    "styled-components": "^6.4.2",
     "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
