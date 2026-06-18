@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Button from '../components/Button'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -38,7 +39,8 @@ const Contact = () => {
           <div className="max-w-5xl mx-auto rounded-[30px] border border-[#3d3d3d] bg-transparent px-6 md:px-14 py-10">
 
             <h2 className="text-center text-[#D1D1C7] text-[1.1rem] md:text-3xl font-medium mb-12 font-ppwatch">
-              Have a project in mind?
+              Have an idea, project, or opportunity?
+              I'd love to hear from you.
             </h2>
 
             <form className="flex flex-col gap-8 font-ppwatch">
@@ -92,10 +94,10 @@ focus:shadow-[0_10px_30px_rgba(0,0,0,0.3)]
               />
 
               <textarea
-                placeholder="Tell me about your business or project."
+                placeholder="Tell me about your project, idea, or opportunity"
                 className="
 w-full
-md:h-30 h-22
+md:h-30 h-30
 rounded-xl
 border border-[#2f2f2f]
 bg-gradient-to-b
@@ -115,15 +117,9 @@ focus:shadow-[0_10px_30px_rgba(0,0,0,0.3)]
 "
               />
 
-              <button
-                type="submit"
-                disabled
-                className="h-15 rounded-[1rem] bg-[#E8E8E3] text-black text-xl font-bold transition-all duration-300 hover:bg-white cursor-pointer disabled:bg-gray-400
-             disabled:cursor-not-allowed
-             disabled:opacity-50"
-              >
-                Not Ready Yet
-              </button>
+              <div className='my-2 flex justify-center items-center'>
+                <Button />
+              </div>
 
             </form>
           </div>

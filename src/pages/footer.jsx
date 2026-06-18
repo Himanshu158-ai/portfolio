@@ -7,13 +7,13 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const footer = () => {
 
-    const scrollToSection = (id, duration = 1) => {
-        gsap.to(window, {
-            duration,
-            scrollTo: `#${id}`,
-            ease: "none",
-        });
-    };
+  const scrollToSection = (id, duration = 1) => {
+    gsap.to(window, {
+      duration,
+      scrollTo: `#${id}`,
+      ease: "none",
+    });
+  };
 
   return (
     <div className='h-[80vh] w-full font-ppwatch px-6 md:px-12 pt-60 relative z-10'>
@@ -27,14 +27,14 @@ const footer = () => {
 
           <div className='flex flex-col gap-3 text-[#6B645C]'>
             <a
-              href="#hommie"
+              href="#home"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
-              onClick={(e)=>{
+              onClick={(e) => {
                 e.preventDefault();
-                scrollToSection("hommie",4.6);
+                scrollToSection("home", 4.8);
               }}
             >
-              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
+              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 Home
               </span>
 
@@ -45,9 +45,9 @@ const footer = () => {
             <a
               href="#about"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
-              onClick={(e)=>{
+              onClick={(e) => {
                 e.preventDefault();
-                scrollToSection("about",1.4);
+                scrollToSection("about", 1.4);
               }}
             >
               <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
@@ -61,9 +61,9 @@ const footer = () => {
             <a
               href="#works"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
-              onClick={(e)=>{
+              onClick={(e) => {
                 e.preventDefault();
-                scrollToSection("works",2);
+                scrollToSection("works", 2);
               }}
             >
               <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
@@ -77,7 +77,7 @@ const footer = () => {
             <a
               href="#contact"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
-              onClick={(e)=>{
+              onClick={(e) => {
                 e.preventDefault();
                 scrollToSection("contact");
               }}
@@ -91,11 +91,12 @@ const footer = () => {
               </span>
             </a>
             <a
+
               href="..."
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit pointer-events-none opacity-50"
             >
-              <span 
-              className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
+              <span
+                className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
                 Resume
               </span>
 
