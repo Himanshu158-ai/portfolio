@@ -91,9 +91,9 @@ const footer = () => {
               </span>
             </a>
             <a
-
-              href="..."
-              className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit pointer-events-none opacity-50"
+              href="/resume.pdf"
+              target="_blank"
+              className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
             >
               <span
                 className="block transition-transform duration-300 ease-out group-hover:-translate-y-full  text-[#6B645C] text-md md:text-lg tracking-wide font-ppwatch font-medium">
