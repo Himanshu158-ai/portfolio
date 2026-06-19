@@ -13,6 +13,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const landing = () => {
     const [availableDate, setAvailableDate] = useState("");
+    const EMAIL_ADDRESS = import.meta.env.EMAIL_ADDRESS;
 
     const nameRef = useRef(null);
     const navRef = useRef(null);
@@ -173,15 +174,13 @@ const landing = () => {
                         </span>
                     </a>
 
-                    <a href="#contact" className="group relative overflow-hidden h-6 cursor-pointer"
-                        onClick={(e) => {
-                            e.preventDefault();
-                            scrollToSection("contact", 4.6);
-                        }}
+                    <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL_ADDRESS}`} className="group relative overflow-hidden h-6 cursor-pointer"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
                         <span className="flex flex-col text-[#6B645C] md:text-md text-sm font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
-                            <span>Contact</span>
-                            <span>Contact</span>
+                            <span>HireMe</span>
+                            <span>HireMe</span>
                         </span>
                     </a>
                 </div>
