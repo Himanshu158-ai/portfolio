@@ -4,6 +4,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import ProjectCards from "../components/ProjectCards";
+import resumeImg from "../assets/chatResume.png";
+import nexthireImg from "../assets/chatNexthire.png";
+import cineverseImg from "../assets/cineverse.png";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -11,25 +14,25 @@ gsap.registerPlugin(ScrollTrigger);
 const projects = [
   {
     title: "Aura",
-    subtitle: "Your Multi-Agent Resume Builder",
-    D: "https://i.pinimg.com/736x/9d/18/68/9d186847a118241d3e8d0f32bac4adbe.jpg",
+    subtitle: "Multi-Agent Resume Builder",
+    D: resumeImg,
     link: "https://resume-builder-llm.vercel.app/",
-    year:"2026"
+    year: "2026"
 
   },
   {
     title: "NexHire",
     subtitle: "Where Talent Meets Opportunity",
-    D: "https://i.pinimg.com/1200x/75/95/e3/7595e3245b90d08cde4b34a2643eecd6.jpg",
+    D: nexthireImg,
     link: "https://next-hire-gamma.vercel.app/",
-    year:"2026"
+    year: "2026"
   },
   {
     title: "CineVerse",
     subtitle: "Explore Stories Beyond Screens",
-    D: "https://i.pinimg.com/1200x/a5/86/ac/a586ac3a3aaf5bd37bfbb32104599000.jpg",
+    D: cineverseImg,
     link: "https://cineverse-dun.vercel.app/",
-    year:"2025"
+    year: "2025"
   },
 ];
 
@@ -133,7 +136,7 @@ const Project = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 ">
         {/* LEFT */}
         <div className="hidden md:flex h-screen sticky top-0 flex items-center justify-center">
           <span className="text-8xl font-semibold">&Theta;</span>
@@ -160,7 +163,7 @@ const Project = () => {
               ref={(el) => (sections.current[index] = el)}
               className=" flex items-center justify-center text-6xl"
             >
-              <ProjectCards data={project}/>
+              <ProjectCards data={project} />
             </div>
           ))}
         </div>

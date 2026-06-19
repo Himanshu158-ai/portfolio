@@ -42,7 +42,7 @@ const ProjectCards = ({ data }) => {
   }
 
   return (
-    <div className='w-full px-4 rounded-lg bg-[#080807] text-[#D1D1C7] flex flex-col gap-4 md:gap-1'>
+    <div className='w-full px-4 rounded-lg bg-[#080807] text-[#D1D1C7] flex flex-col gap-4 md:gap-3'>
       <a
         href={data.link}
         target="_blank"
@@ -53,7 +53,7 @@ const ProjectCards = ({ data }) => {
         onMouseMove={handleMouseMove}
       >
         <img
-          className="w-full h-[70vh] md:h-[80vh] object-cover rounded-lg cursor-pointer "
+          className="w-full  object-contain rounded-lg cursor-pointer "
           src={data.D}
           alt=""
         />
