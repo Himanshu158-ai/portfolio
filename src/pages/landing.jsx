@@ -1,7 +1,6 @@
 
 import { ArrowDownRight, ArrowUpRight, Menu, X } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
-import MenuCard from "../components/MenuCard";
 
 
 import gsap from "gsap";
@@ -132,8 +131,8 @@ const landing = () => {
     return (
         <div ref={mainRef} className='min-h-screen h-screen bg-[#E8E8E3] font-ppwatch sticky top-0 z-0'>
             <nav ref={navRef} className='relative h-15 flex justify-between items-start md:items-center px-3 md:px-10 pt-5 md:pt-2'>
-                <div className="text-[#6B645C] text-sm md:text-[1rem] font-medium tracking-wide w-[10rem] md:w-[20rem]">
-                    Web Developer &amp; Designer
+                <div className="text-[#6B645C] text-sm md:text-[1rem] font-medium tracking-wide w-[11rem] md:w-[20rem]">
+                    Full Stack Developer / MERN
                 </div>
 
                 {/* Desktop Menu */}
@@ -174,9 +173,7 @@ const landing = () => {
                         </span>
                     </a>
 
-                    <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL_ADDRESS}`} className="group relative overflow-hidden h-6 cursor-pointer"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <a href="mailto:himanshu.mern@gmail.com?subject=We%27d%20Like%20to%20Hire%20You" className="group relative overflow-hidden h-6 cursor-pointer"
                     >
                         <span className="flex flex-col text-[#6B645C] md:text-md text-sm font-medium tracking-wide transition-transform duration-500 ease-out group-hover:-translate-y-6">
                             <span>HireMe</span>
