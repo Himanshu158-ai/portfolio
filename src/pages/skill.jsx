@@ -32,6 +32,8 @@ function scrambleText(spans, finalText, duration = 1.2) {
     requestAnimationFrame(tick)
 }
 
+
+
 const skillColumns = [
     {
         heading: 'Languages\n& Tools',
@@ -266,8 +268,3 @@ const Skill = () => {
 }
 
 export default Skill
-
-// src="https://i.pinimg.com/736x/fe/ce/d9/feced940ac84097e5f76881d376d2748.jpg"
-// src='https://i.pinimg.com/736x/0a/5a/d0/0a5ad04ded73ddfa88bead239be71ce5.jpg'
-// src='https://i.pinimg.com/736x/f4/71/55/f47155707c3d433ebdf05a8dc7fcdc23.jpg'
-// src='https://i.pinimg.com/1200x/24/2d/27/242d274244a9418715f036fedea751d9.jpg'
