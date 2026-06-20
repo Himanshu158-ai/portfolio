@@ -16,7 +16,7 @@ const footer = () => {
   };
 
   return (
-    <div className='h-[80vh] w-full font-ppwatch px-6 md:px-12 pt-60 relative z-10'>
+    <div className='h-auto w-full font-ppwatch px-6 md:px-12 pt-50 pb-20 relative z-10 bg-[#E8E8E3]'>
       <div className='grid grid-cols-2 gap-12 md:gap-24'>
 
         {/* Menu */}

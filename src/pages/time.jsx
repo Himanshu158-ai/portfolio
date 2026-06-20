@@ -25,7 +25,7 @@ const Time = () => {
   }, [])
 
   return (
-    <div className='flex flex-col items-end justify-end font-ppwatch py-5 px-10 relative z-10'>
+    <div className='flex flex-col items-end justify-end font-ppwatch py-5 px-10 relative z-10 bg-[#E8E8E3]'>
       <h2 className='text-[#393632] text-md md:text-lg  uppercase font-ppwatch '>
         Local Time
       </h2>

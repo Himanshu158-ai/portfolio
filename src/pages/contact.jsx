@@ -27,7 +27,7 @@ const Contact = () => {
   }, [])
 
   return (
-    <div className='relative z-9' id='contact'>
+    <div className='relative z-9 bg-[#E8E8E3]' id='contact'>
       <div
         ref={cardRef}
         className='bg-[linear-gradient(to_bottom,#151513_0%,#121210_35%,#1A1815_65%,#2B2823_100%)] md:mx-20 mx-4 py-8 h-auto  flex flex-col items-center justify-center relative -top-30 md:-top-25 rounded-[5px]'
