@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import WorksCards from '../components/WorksCards'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+// import ScrollStack, { ScrollStackItem } from '../components/ScrollStack'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -92,7 +93,7 @@ const work = () => {
         <div
           ref={contentRef}
           className='flex justify-between items-start flex-col md:flex-row gap-5 md:gap-15 w-full md:w-[55%] md:ml-[45%]'
-          
+
         >
           <h1 className='text-[1rem] md:text-[1.2rem] font-medium tracking-wide'>
             (Capabilities)
