@@ -7,6 +7,7 @@ import ProjectCards from "../components/ProjectCards";
 import resumeImg from "../assets/chatResume.png";
 import nexthireImg from "../assets/chatNexthire.png";
 import cineverseImg from "../assets/cineverse.png";
+import ratelimitImg from "../assets/rateLimiter.png";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -14,9 +15,17 @@ gsap.registerPlugin(ScrollTrigger);
 const projects = [
   {
     title: "Aura",
-    subtitle: "Multi-Agent Resume Builder",
+    subtitle: "AI Agentic Resume Builder",
     D: resumeImg,
     link: "https://resume-builder-llm.vercel.app/",
+    year: "2026"
+
+  },
+  {
+    title: "GuardX",
+    subtitle: "Rate Limit npm package ",
+    D: ratelimitImg,
+    link: "https://guardx-official.vercel.app/",
     year: "2026"
 
   },
