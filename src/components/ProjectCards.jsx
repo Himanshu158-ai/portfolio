@@ -97,7 +97,7 @@ const ProjectCards = ({ data }) => {
         onMouseMove={handleMouseMove}
       >
         <img
-          className="w-full  object-contain rounded-lg cursor-pointer "
+          className="w-full  object-contain rounded-lg cursor-pointer"
           src={data.D}
           alt=""
         />
