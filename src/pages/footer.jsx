@@ -91,8 +91,9 @@ const footer = () => {
               </span>
             </a>
             <a
-              href="/resume.pdf"
+              href="/himanshu-CV.pdf"
               target="_blank"
+              rel="noopener noreferrer"
               className="group relative overflow-hidden h-[1.4em] inline-block font-light w-fit"
             >
               <span
