@@ -5,7 +5,7 @@ import SplitType from 'split-type'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&'
+const CHARS = 'ABCDEFGHabcdefghijkltuvwxyz@#$%&++_())(^%$$%#&'
 
 function scrambleText(spans, finalText, duration = 1.2) {
     const totalFrames = Math.round(duration * 60)

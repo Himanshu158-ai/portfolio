@@ -13,7 +13,7 @@ const ProjectCards = ({ data }) => {
   const titleRef = useRef(null);
 
   useEffect(() => {
-    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    const chars = "ABCDEFGHabcdefghijkltuvwxyz@#$%&+_{()})^%$#";
 
     const runDecode = () => {
       let iteration = 0;
