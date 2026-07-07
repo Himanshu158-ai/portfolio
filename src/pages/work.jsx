@@ -57,10 +57,10 @@ const work = () => {
       {
         y: 50,
         opacity: 0,
-        duration: 1,
+        duration: 0.7,
         ease: "power4.out",
       },
-      "-=0.6"
+      "-=0.75"
     )
 
     return () => {
