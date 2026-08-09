@@ -1,6 +1,7 @@
 
 import { ArrowDownRight, ArrowUpRight, Menu, X } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
+import TextPressure from '../components/TextPressure';
 
 
 import gsap from "gsap";
@@ -230,7 +231,7 @@ const landing = () => {
                         <div className='flex justify-center items-center'>
                             <img ref={imgRef}
                                 src="https://i.pinimg.com/1200x/24/2d/27/242d274244a9418715f036fedea751d9.jpg"
-                                className='h-[9.2rem] w-[6.9rem] md:h-[16rem] md:w-[12rem] object-cover rounded-md grayscale'
+                                className='h-[9.2rem] w-[6.9rem] md:h-[14rem] md:w-[10rem] object-cover rounded-md grayscale'
                                 alt="image"
                             />
                         </div>
