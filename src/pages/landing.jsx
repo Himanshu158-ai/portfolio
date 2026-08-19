@@ -2,7 +2,7 @@
 import { ArrowDownRight, ArrowUpRight, Menu, X } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 import ElasticMesh from "../components/ElasticMesh";
-import profileImg from "../assets/profile.jpg";
+import profileImg from "../assets/profile2.png";
 
 
 import gsap from "gsap";
