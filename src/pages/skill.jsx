@@ -216,10 +216,10 @@ const Skill = () => {
                         <div className="flex justify-center lg:justify-start">
                             <div className="relative group w-full max-w-[350px]">
 
-                                <div className="relative w-full h-[400px] md:h-[500px]">
+                                <div className="relative w-[92%] h-[450px] md:h-[500px]">
                                     <ElasticMesh
                                         image={profileImg}
-                                        interaction="hover"
+                                        interaction="drag"
                                         tilt={0}
                                         shading={0.7}
                                         color1="#5227FF"
