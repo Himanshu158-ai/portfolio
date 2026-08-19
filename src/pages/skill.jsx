@@ -2,6 +2,8 @@ import React, { useRef, useEffect } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import SplitType from 'split-type'
+import ElasticMesh from '../components/ElasticMesh'
+import profileImg from '../assets/profile.jpg'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -213,18 +215,29 @@ const Skill = () => {
                         {/* Left Image */}
                         <div className="flex justify-center lg:justify-start">
                             <div className="relative group w-full max-w-[350px]">
-                                <div className="absolute -inset-2 border border-[#6B645C]/30 rounded-sm translate-x-3 translate-y-3 -z-10"></div>
 
-                                <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden rounded-sm">
-                                    <img
-                                        src='https://i.pinimg.com/1200x/24/2d/27/242d274244a9418715f036fedea751d9.jpg'
-                                        alt="about"
-                                        className="w-full h-full object-cover"
+                                <div className="relative w-full h-[400px] md:h-[500px]">
+                                    <ElasticMesh
+                                        image={profileImg}
+                                        interaction="hover"
+                                        tilt={0}
+                                        shading={0.7}
+                                        color1="#5227FF"
+                                        color2="#B19EEF"
+                                        showGrid={false}
+                                        gridDensity={4}
+                                        gridOpacity={0.35}
+                                        gridColor="#ffffff"
+                                        highlight="#f6d6d6"
+                                        borderRadius={12}
+                                        stiffness={0.075}
+                                        damping={0.2}
+                                        grabRadius={0.6}
+                                        pull={0.4}
+                                        wobble={6}
+                                        resolution={25}
+                                        enabled
                                     />
-
-                                    <div className="absolute inset-0 bg-[#6B645C]/20 mix-blend-color transition-opacity duration-700 "></div>
-
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none"></div>
                                 </div>
                             </div>
                         </div>

@@ -230,7 +230,7 @@ const landing = () => {
 
                     <div className=" flex items-end md:w-[60%] w-full justify-between px-5">
                         <div className='flex justify-center items-center'>
-                            <div ref={imgRef} className="w-[7.5rem] h-[10.2rem] md:w-[11rem] md:h-[16rem]">
+                            <div ref={imgRef} className="w-[7.5rem] h-[10.9rem] md:w-[11rem] md:h-[16rem]">
                                 <ElasticMesh
                                     image={profileImg}
                                     interaction="hover"
