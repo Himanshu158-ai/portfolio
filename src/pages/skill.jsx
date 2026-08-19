@@ -212,34 +212,44 @@ const Skill = () => {
 
                     <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-10 md:gap-0 h-full px-5">
 
-                        {/* Left Image */}
-                        <div className="flex justify-center lg:justify-start">
-                            <div className="relative group w-full max-w-[350px]">
+                        <div className="relative w-[85%] h-[450px] md:h-[500px]">
 
-                                <div className="relative w-[85%] h-[450px] md:h-[500px]">
-                                    <ElasticMesh
-                                        image={profileImg}
-                                        interaction="drag"
-                                        tilt={0}
-                                        shading={0.7}
-                                        color1="#5227FF"
-                                        color2="#B19EEF"
-                                        showGrid={false}
-                                        gridDensity={4}
-                                        gridOpacity={0.35}
-                                        gridColor="#ffffff"
-                                        highlight="#f6d6d6"
-                                        borderRadius={12}
-                                        stiffness={0.075}
-                                        damping={0.2}
-                                        grabRadius={0.6}
-                                        pull={0.4}
-                                        wobble={6}
-                                        resolution={25}
-                                        enabled
-                                    />
-                                </div>
-                            </div>
+                            {/* Only Right Raised Border */}
+                            <div
+                                className="
+            absolute
+            top-2
+            bottom-2
+            left-full
+            ml-3
+            w-[1px]
+            bg-white/10
+            rounded-full
+            -z-10
+        "
+                            />
+
+                            <ElasticMesh
+                                image={profileImg}
+                                interaction="drag"
+                                tilt={0}
+                                shading={0.7}
+                                color1="#5227FF"
+                                color2="#B19EEF"
+                                showGrid={false}
+                                gridDensity={4}
+                                gridOpacity={0.35}
+                                gridColor="#ffffff"
+                                highlight="#f6d6d6"
+                                borderRadius={12}
+                                stiffness={0.075}
+                                damping={0.2}
+                                grabRadius={0.6}
+                                pull={0.4}
+                                wobble={6}
+                                resolution={25}
+                                enabled
+                            />
                         </div>
 
                         {/* Right Content */}
@@ -266,7 +276,7 @@ const Skill = () => {
                                     </p>
 
                                     <p className='text-[0.9rem] md:text-[1rem] font-light tracking-tight min-w-full'>
-                                       My interests extend beyond traditional web development into Generative AI, where I enjoy experimenting, learning, and building. I’m particularly excited about creating products that combine modern web technologies with intelligent AI experiences.
+                                        My interests extend beyond traditional web development into Generative AI, where I enjoy experimenting, learning, and building. I’m particularly excited about creating products that combine modern web technologies with intelligent AI experiences.
                                     </p>
                                 </div>
 
