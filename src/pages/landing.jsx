@@ -1,7 +1,8 @@
 
 import { ArrowDownRight, ArrowUpRight, Menu, X } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
-import TextPressure from '../components/TextPressure';
+import ElasticMesh from "../components/ElasticMesh";
+import profileImg from "../assets/profile.jpg";
 
 
 import gsap from "gsap";
@@ -229,11 +230,29 @@ const landing = () => {
 
                     <div className=" flex items-end md:w-[60%] w-full justify-between px-5">
                         <div className='flex justify-center items-center'>
-                            <img ref={imgRef}
-                                src="https://i.pinimg.com/1200x/24/2d/27/242d274244a9418715f036fedea751d9.jpg"
-                                className='h-[9.2rem] w-[6.9rem] md:h-[14rem] md:w-[10rem] object-cover rounded-md grayscale'
-                                alt="image"
-                            />
+                            <div ref={imgRef} className="w-[7.5rem] h-[10.2rem] md:w-[11rem] md:h-[16rem]">
+                                <ElasticMesh
+                                    image={profileImg}
+                                    interaction="hover"
+                                    tilt={0}
+                                    shading={0.7}
+                                    color1="#5227FF"
+                                    color2="#B19EEF"
+                                    showGrid={false}
+                                    gridDensity={4}
+                                    gridOpacity={0.35}
+                                    gridColor="#ffffff"
+                                    highlight="#f6d6d6"
+                                    borderRadius={12}
+                                    stiffness={0.075}
+                                    damping={0.2}
+                                    grabRadius={0.6}
+                                    pull={0.4}
+                                    wobble={6}
+                                    resolution={25}
+                                    enabled
+                                />
+                            </div>
                         </div>
 
                         <div className='flex justify-center md:justify-end items-center md:items-end'>
